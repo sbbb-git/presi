@@ -1,0 +1,16 @@
+wiki_key,display_name,party,status,required,declared_on,source,notes
+le pen,Marine Le Pen,Rassemblement national,candidate,TRUE,2026-07-07,,"Candidate declaree ; RN"
+bardella,Jordan Bardella,Rassemblement national,not_candidate,FALSE,2026-07-07,,"Ecarte : Le Pen est la candidate RN. Les sondages le testant sont ignores"
+melenchon,Jean-Luc Melenchon,La France insoumise,undeclared,FALSE,,,
+faure,Olivier Faure,Parti socialiste,undeclared,FALSE,,,
+glucksmann,Raphael Glucksmann,Place publique,undeclared,FALSE,,,
+tondelier,Marine Tondelier,Les Ecologistes,undeclared,FALSE,,,
+roussel,Fabien Roussel,Parti communiste francais,undeclared,FALSE,,,
+ruffin,Francois Ruffin,Debout !,undeclared,FALSE,,,
+attal,Gabriel Attal,Renaissance,undeclared,FALSE,,,
+philippe,Edouard Philippe,Horizons,undeclared,FALSE,,,
+darmanin,Gerald Darmanin,Renaissance,undeclared,FALSE,,,
+retailleau,Bruno Retailleau,Les Republicains,undeclared,FALSE,,,
+wauquiez,Laurent Wauquiez,Les Republicains,undeclared,FALSE,,,
+zemmour,Eric Zemmour,Reconquete,undeclared,FALSE,,,
+macron,Emmanuel Macron,Renaissance,not_candidate,FALSE,,,"Non reeligible (deux mandats consecutifs)"

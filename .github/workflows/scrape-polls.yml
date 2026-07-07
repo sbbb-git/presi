@@ -1,0 +1,45 @@
+name: Scraper sondages 2027
+
+on:
+  schedule:
+    # Deux fois par semaine : lundi et jeudi a 06:00 UTC (08:00 Paris ete).
+    - cron: "0 6 * * 1,4"
+  workflow_dispatch: {}  # lancement manuel possible depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape-polls
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Installer les dependances
+        run: pip install -r requirements.txt
+
+      - name: Scraper les sondages
+        run: python scrape_polls.py
+
+      - name: Commit des donnees mises a jour
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain data/)" ]; then
+            echo "Aucun changement dans les donnees."
+            exit 0
+          fi
+          git add data/
+          git commit -m "data: mise a jour automatique des sondages 2027 ($(date -u +%Y-%m-%d))"
+          git push
