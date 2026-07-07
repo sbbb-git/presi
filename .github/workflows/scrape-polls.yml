@@ -32,14 +32,17 @@ jobs:
       - name: Scraper les sondages
         run: python scrape_polls.py
 
-      - name: Commit des donnees mises a jour
+      - name: Generer le dashboard
+        run: python build_site.py
+
+      - name: Commit des donnees et du dashboard
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -z "$(git status --porcelain data/)" ]; then
-            echo "Aucun changement dans les donnees."
+          if [ -z "$(git status --porcelain data/ docs/)" ]; then
+            echo "Aucun changement."
             exit 0
           fi
-          git add data/
+          git add data/ docs/
           git commit -m "data: mise a jour automatique des sondages 2027 ($(date -u +%Y-%m-%d))"
           git push

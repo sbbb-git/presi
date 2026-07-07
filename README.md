@@ -105,12 +105,39 @@ python scrape_polls.py --lang fr
 | `percentage` | Intention de vote (%) |
 | `scraped_at` | Date de récupération |
 
+## Dashboard web (GitHub Pages)
+
+Un tableau de bord statique est généré dans [`docs/index.html`](docs/index.html)
+par [`build_site.py`](build_site.py) à partir de `data/polls.csv` : courbes
+d'évolution des intentions de vote au 1er tour (top candidats), suivi des
+candidatures (déclarés / indécis / écartés) et tableau des dernières valeurs.
+Page autonome, sans dépendance externe, thème clair/sombre automatique.
+
+```bash
+python build_site.py          # régénère docs/index.html depuis le CSV
+```
+
+### Activer GitHub Pages (une seule fois)
+
+1. Repo **Settings → Pages**.
+2. **Build and deployment → Source : GitHub Actions**.
+
+Ensuite, le workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml)
+publie automatiquement `docs/` à chaque mise à jour (ou via **Actions → Run
+workflow**). L'URL sera `https://sbbb-git.github.io/presi/`.
+
+> Le déploiement Pages se fait depuis la **branche par défaut** du dépôt. Tant
+> que le travail vit sur une branche de feature, lance le déploiement à la main
+> (`workflow_dispatch`) ou fusionne d'abord dans la branche par défaut.
+
 ## Automatisation
 
 Le workflow [`.github/workflows/scrape-polls.yml`](.github/workflows/scrape-polls.yml)
-s'exécute **lundi et jeudi à 06:00 UTC**, relance le scraper et commit
-automatiquement `data/` si les sondages ont changé. Lancement manuel possible
-via l'onglet **Actions → Scraper sondages 2027 → Run workflow**.
+s'exécute **lundi et jeudi à 06:00 UTC**, relance le scraper, régénère le
+dashboard et commit automatiquement `data/` + `docs/` si les sondages ont
+changé. Lancement manuel possible via l'onglet **Actions → Scraper sondages
+2027 → Run workflow**. Le commit sur `docs/` déclenche à son tour la
+publication Pages.
 
 ## Limites
 
