@@ -32,11 +32,33 @@ PALETTE = [
 MAX_SERIES = len(PALETTE)
 
 STATUS_LABELS = {
-    "candidate": "Candidat·e déclaré·e",
+    "declared": "Candidature déclarée",
+    "likely": "Candidature probable",
+    "undecided": "Position non tranchée",
+    "withdrawn": "A renoncé / rallié·e",
+    "ineligible": "Inéligible",
+    # anciens statuts, encore acceptes
+    "candidate": "Candidature déclarée",
+    "undeclared": "Position non tranchée",
     "not_candidate": "A renoncé / inéligible",
-    "undeclared": "Pas encore déclaré·e",
 }
-STATUS_ORDER = ["candidate", "undeclared", "not_candidate"]
+STATUS_ORDER = ["declared", "likely", "undecided", "withdrawn", "ineligible",
+                "candidate", "undeclared", "not_candidate"]
+STATUS_CLASS = {
+    "declared": "ok", "candidate": "ok",
+    "likely": "soon",
+    "undecided": "wait", "undeclared": "wait",
+    "withdrawn": "out", "ineligible": "out", "not_candidate": "out",
+    "notcandidate": "out",
+}
+BADGE_TXT = {
+    "declared": "déclaré·e", "candidate": "déclaré·e",
+    "likely": "probable",
+    "undecided": "indécis·e", "undeclared": "indécis·e",
+    "withdrawn": "a renoncé", "ineligible": "inéligible",
+    "notcandidate": "non-candidat", "not_candidate": "non-candidat",
+    "unknown": "?",
+}
 
 
 def surname(name: str) -> str:
@@ -136,6 +158,7 @@ def build_status_groups(cand_df: pd.DataFrame) -> dict:
             "party": r.get("party", ""),
             "declared_on": r.get("declared_on", ""),
             "source": r.get("source", ""),
+            "notes": r.get("notes", ""),
         })
     return groups
 
@@ -148,7 +171,6 @@ def render_html(series, dates, latest_rows, status_groups, meta) -> str:
 
     # --- Cartes de suivi des candidatures ---
     status_html = []
-    status_class = {"candidate": "ok", "not_candidate": "out", "undeclared": "wait"}
     for st in STATUS_ORDER:
         people = status_groups.get(st, [])
         if not people:
@@ -159,13 +181,21 @@ def render_html(series, dates, latest_rows, status_groups, meta) -> str:
             declared = ""
             if p["declared_on"]:
                 declared = f"<span class='date'>{html.escape(p['declared_on'])}</span>"
+            src = str(p.get("source", "") or "")
+            name_html = html.escape(p["name"])
+            if src.startswith("http"):
+                name_html = (f"<a href='{html.escape(src)}' target='_blank' "
+                             f"rel='noopener'>{name_html}</a>")
+            note = str(p.get("notes", "") or "")
+            note_html = (f"<span class='note-inline'>{html.escape(note)}</span>"
+                         if note else "")
             chips.append(
                 f"<li><span class='dot'></span>"
-                f"<span class='nm'>{html.escape(p['name'])}</span>"
-                f"<span class='pt'>{party}</span>{declared}</li>"
+                f"<span class='nm'>{name_html}</span>"
+                f"<span class='pt'>{party}</span>{declared}{note_html}</li>"
             )
         status_html.append(
-            f"<div class='statcard {status_class.get(st, '')}'>"
+            f"<div class='statcard {STATUS_CLASS.get(st, '')}'>"
             f"<h3>{html.escape(STATUS_LABELS.get(st, st))} "
             f"<span class='count'>{len(people)}</span></h3>"
             f"<ul>{''.join(chips)}</ul></div>"
@@ -174,12 +204,9 @@ def render_html(series, dates, latest_rows, status_groups, meta) -> str:
     # --- Tableau des dernieres valeurs ---
     trs = []
     for r in latest_rows:
-        st = r["status"]
-        badge_cls = {"candidate": "ok", "notcandidate": "out",
-                     "not_candidate": "out", "undeclared": "wait"}.get(st, "unk")
-        badge_txt = {"candidate": "candidat", "notcandidate": "non-candidat",
-                     "not_candidate": "non-candidat",
-                     "undeclared": "indécis", "unknown": "?"}.get(st, st or "?")
+        st = str(r["status"] or "")
+        badge_cls = STATUS_CLASS.get(st, "unk")
+        badge_txt = BADGE_TXT.get(st, st or "?")
         trs.append(
             f"<tr><td class='nm'>{html.escape(r['candidate'])}</td>"
             f"<td class='muted'>{html.escape(r['party'])}</td>"
@@ -194,6 +221,7 @@ def render_html(series, dates, latest_rows, status_groups, meta) -> str:
         data_json=data_json,
         status_cards="".join(status_html),
         table_rows=table_html,
+        verified=html.escape(meta.get("verified", "—")),
         updated=html.escape(meta.get("updated", "")),
         n_polls=meta.get("n_polls", 0),
         n_pollsters=meta.get("n_pollsters", 0),
@@ -211,13 +239,13 @@ TEMPLATE = r"""<!DOCTYPE html>
   :root {{
     --surface-1:#fcfcfb; --page:#f9f9f7; --text-1:#0b0b0b; --text-2:#52514e;
     --muted:#898781; --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
-    --ok:#0ca30c; --wait:#eda100; --out:#d03b3b;
+    --ok:#0ca30c; --wait:#eda100; --out:#d03b3b; --soon:#2a78d6;
   }}
   @media (prefers-color-scheme: dark) {{
     :root {{
       --surface-1:#1a1a19; --page:#0d0d0d; --text-1:#fff; --text-2:#c3c2b7;
       --muted:#898781; --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
-      --ok:#0ca30c; --wait:#c98500; --out:#e66767;
+      --ok:#0ca30c; --wait:#c98500; --out:#e66767; --soon:#3987e5;
     }}
   }}
   * {{ box-sizing:border-box; }}
@@ -264,6 +292,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   .statcard.ok {{ border-top-color:var(--ok); }}
   .statcard.out {{ border-top-color:var(--out); }}
   .statcard.wait {{ border-top-color:var(--wait); }}
+  .statcard.soon {{ border-top-color:var(--soon); }}
   .statcard h3 {{ font-size:.95rem; margin:0 0 10px; display:flex;
     justify-content:space-between; align-items:center; }}
   .statcard .count {{ background:var(--page); border:1px solid var(--border);
@@ -276,9 +305,13 @@ TEMPLATE = r"""<!DOCTYPE html>
   .statcard.ok .dot {{ background:var(--ok); }}
   .statcard.out .dot {{ background:var(--out); }}
   .statcard.wait .dot {{ background:var(--wait); }}
+  .statcard.soon .dot {{ background:var(--soon); }}
   .statcard .nm {{ font-weight:600; }}
+  .statcard .nm a {{ text-decoration-color:var(--muted); }}
   .statcard .pt, .statcard .date {{ color:var(--muted); font-size:.82rem; }}
   .statcard .date {{ margin-left:auto; }}
+  .statcard .note-inline {{ flex-basis:100%; color:var(--muted);
+    font-size:.78rem; padding-left:13px; }}
   /* table */
   table {{ width:100%; border-collapse:collapse; font-size:.9rem; }}
   th, td {{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); }}
@@ -292,6 +325,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   .badge.ok {{ color:var(--ok); }}
   .badge.out {{ color:var(--out); }}
   .badge.wait {{ color:var(--wait); }}
+  .badge.soon {{ color:var(--soon); }}
   .badge.unk {{ color:var(--muted); }}
   footer {{ margin-top:40px; color:var(--muted); font-size:.82rem; }}
   a {{ color:inherit; }}
@@ -322,6 +356,10 @@ TEMPLATE = r"""<!DOCTYPE html>
 
   <h2>Suivi des candidatures</h2>
   <div class="statgrid">{status_cards}</div>
+  <p class="note">Statuts vérifiés sur sources de presse (cliquer un nom ouvre sa
+    source) — dossier détaillé avec citations :
+    <a href="https://github.com/sbbb-git/presi/blob/claude/election-poll-scraper-33nqxx/declarations.md">declarations.md</a>
+    · dernière vérification&nbsp;: {verified}</p>
 
   <h2>Dernière valeur connue par candidat</h2>
   <div class="card">
@@ -480,8 +518,14 @@ def main() -> int:
     if "scraped_at" in df.columns and not df["scraped_at"].dropna().empty:
         updated = str(df["scraped_at"].dropna().max())
 
+    verified = ""
+    if "checked_on" in cand_df.columns:
+        vals = [v for v in cand_df["checked_on"].astype(str) if v and v != "nan"]
+        verified = max(vals) if vals else ""
+
     meta = {
         "updated": updated,
+        "verified": verified or "—",
         "n_polls": int(df.drop_duplicates(
             ["hypothesis_id", "pollster", "fieldwork_raw"]).shape[0])
             if "hypothesis_id" in df.columns else int(df.shape[0]),

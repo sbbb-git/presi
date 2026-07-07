@@ -29,20 +29,29 @@ C'est le fichier que **tu maintiens à la main** au fil des déclarations.
 | `wiki_key` | Nom (nom de famille) tel qu'il apparaît dans les colonnes Wikipédia, ex. `le pen`, `melenchon` |
 | `display_name` | Nom affiché dans les données |
 | `party` | Parti |
-| `status` | `candidate`, `not_candidate` ou `undeclared` |
+| `status` | `declared`, `likely`, `undecided`, `withdrawn` ou `ineligible` |
 | `required` | `TRUE` = doit figurer dans une hypothèse pour qu'elle soit conservée |
-| `declared_on` | Date de la déclaration |
-| `source` | Lien vers la source de la déclaration |
+| `declared_on` | Date de l'événement clé (annonce, renoncement, jugement) |
+| `checked_on` | Date de la dernière vérification web du statut |
+| `source` | URL de la source de presse la plus probante |
 | `notes` | Commentaire libre |
 
-Effet du `status` sur le filtrage :
+Taxonomie des statuts (chacun sourcé, voir [`declarations.md`](declarations.md)) :
 
-- **`candidate`** → conservé normalement.
-- **`not_candidate`** → ses colonnes sont retirées, et toute hypothèse qui en
-  dépend est écartée. *Exemple actuel : Marine Le Pen étant candidate RN,
-  Jordan Bardella est `not_candidate`, donc les sondages le testant comme
-  candidat RN sont ignorés.*
-- **`undeclared`** → conservé tel quel (les instituts le testent encore).
+- **`declared`** → candidature annoncée explicitement et publiquement.
+- **`likely`** → intention forte affirmée (candidat « quoi qu'il arrive »,
+  investiture en cours) mais annonce formelle pas encore faite.
+- **`undecided`** → flou entretenu, pas de position claire.
+- **`withdrawn`** → a explicitement renoncé ou s'est rallié à un autre candidat.
+- **`ineligible`** → légalement empêché (inéligibilité judiciaire, limite
+  constitutionnelle de mandats).
+
+Effet sur le filtrage des sondages :
+
+- `withdrawn` / `ineligible` → colonnes retirées, hypothèses dépendantes écartées.
+- `--declared-only` → n'accepte que les hypothèses composées de `declared`.
+- Les autres statuts sont conservés tels quels (les instituts les testent encore).
+- Les anciens statuts (`candidate`, `not_candidate`, `undeclared`) restent lus.
 
 `required = TRUE` filtre **par hypothèse** : seules les configurations
 contenant toutes les personnes requises sont gardées (par défaut, Marine

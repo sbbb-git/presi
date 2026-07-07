@@ -44,18 +44,21 @@ WIKI_PAGES = {
 # hypothetiques (candidats generiques, rejeu de 2022...) sont exclues.
 SECTIONS_KEEP = ("first round", "second round", "premier tour", "second tour")
 
-# Le filtrage des candidats est pilote par le registre candidates.csv :
-#   - status = candidate      -> personne declaree candidate
-#   - status = not_candidate  -> declaree NON candidate (ou ineligible) ; ses
-#                                colonnes sont retirees et les hypotheses qui
-#                                reposent sur elle sont ecartees
-#   - status = undeclared     -> pas encore tranche ; conservee telle quelle
-#   - required = TRUE         -> doit figurer dans une hypothese pour la garder
+# Le filtrage des candidats est pilote par le registre candidates.csv.
+# Statuts nuances (les anciens candidate/not_candidate/undeclared restent lus) :
+#   - declared   -> candidature annoncee explicitement (source datee)
+#   - likely     -> intention forte affirmee, annonce formelle pas encore faite
+#   - undecided  -> flou entretenu / pas de position claire
+#   - withdrawn  -> a explicitement renonce ou s'est rallie a un autre candidat
+#   - ineligible -> legalement empeche (justice, limite de mandats)
+# Effet filtre : withdrawn/ineligible/not_candidate -> colonnes retirees et
+# hypotheses dependantes ecartees ; --declared-only n'accepte que declared.
+#   - required = TRUE -> doit figurer dans une hypothese pour la garder
 DEFAULT_REGISTRY_PATH = "candidates.csv"
 
 # Formes normalisees des statuts (normalise() supprime le "_").
-STATUS_CANDIDATE = "candidate"
-STATUS_NOT_CANDIDATE = "notcandidate"
+DECLARED_STATUSES = {"declared", "candidate"}
+EXCLUDED_STATUSES = {"withdrawn", "ineligible", "notcandidate"}
 # -----------------------------------------------------------------------------
 
 # Libelles de colonnes qui ne sont PAS des candidats/partis. Compares en
@@ -129,7 +132,7 @@ class Registry:
         }
         self.excluded_keys = {
             k for k, r in self.by_key.items()
-            if normalise(r.get("status", "")) == STATUS_NOT_CANDIDATE
+            if normalise(r.get("status", "")) in EXCLUDED_STATUSES
         }
 
     @classmethod
@@ -288,10 +291,10 @@ def parse_table(table_html: str, section: str, subsection: str, hypothesis_id: i
     ]
 
     if apply_filters:
-        # 1) Retire les colonnes des personnes declarees non candidates.
+        # 1) Retire les colonnes des personnes retirees / ineligibles.
         candidate_cols = [
             c for c in candidate_cols
-            if registry.status(c) != STATUS_NOT_CANDIDATE
+            if registry.status(c) not in EXCLUDED_STATUSES
         ]
         # 2) Exige la presence de toutes les personnes "requises".
         present_keys = {registry.match_key(c) for c in candidate_cols}
@@ -300,7 +303,8 @@ def parse_table(table_html: str, section: str, subsection: str, hypothesis_id: i
             return []
         # 3) declared_only : aucune personne non declaree candidate toleree.
         if declared_only:
-            if any(registry.status(c) != STATUS_CANDIDATE for c in candidate_cols):
+            if any(registry.status(c) not in DECLARED_STATUSES
+                   for c in candidate_cols):
                 return []
 
     if not candidate_cols:
