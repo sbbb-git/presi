@@ -32,6 +32,10 @@ jobs:
       - name: Scraper les sondages
         run: python scrape_polls.py
 
+      - name: Scraper le marche predictif (Polymarket)
+        run: python scrape_markets.py
+        continue-on-error: true  # le dashboard reste generable sans le marche
+
       - name: Generer le dashboard
         run: python build_site.py
 
