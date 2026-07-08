@@ -1,29 +1,30 @@
 candidate,status,n_polls,last_seen
-Marine Le Pen,candidate,41,2025-03-27
-Edouard Philippe,undeclared,54,2025-03-27
-Jean-Luc Melenchon,undeclared,37,2025-03-27
-Laurent Wauquiez,undeclared,36,2025-03-27
-Fabien Roussel,undeclared,31,2025-03-27
-Eric Zemmour,undeclared,30,2025-03-27
-Olivier Faure,undeclared,23,2025-03-27
-Marine Tondelier,undeclared,20,2025-03-27
-Gabriel Attal,undeclared,15,2025-03-27
-Gerald Darmanin,undeclared,5,2024-04-18
-Francois Ruffin,undeclared,4,2024-09-12
-Raphael Glucksmann,undeclared,4,2025-03-27
-Bruno Retailleau,undeclared,1,2025-03-27
-Nicolas Dupont-Aignan (DLF),unknown,24,2025-03-27
-Nathalie Arthaud (LO),unknown,20,2025-03-27
+Marine Le Pen,declared,78,2026-05-28
+Édouard Philippe,declared,77,2026-05-28
+Jean-Luc Mélenchon,declared,62,2026-05-28
+Nicolas Dupont-Aignan,declared,43,2026-05-28
+Nathalie Arthaud,declared,38,2026-05-28
+Marine Tondelier,declared,37,2026-05-28
+Gabriel Attal,declared,31,2026-05-28
+Bruno Retailleau,declared,24,2026-05-28
+François Ruffin,declared,6,2025-04-18
+Xavier Bertrand,declared,2,2024-09-12
+Fabien Roussel,likely,51,2026-05-28
+Éric Zemmour,likely,39,2026-03-27
+Raphaël Glucksmann,likely,23,2026-05-28
+Dominique de Villepin,likely,6,2026-03-27
+Olivier Faure,undecided,26,2025-05-20
+Bernard Cazeneuve,undecided,8,2023-09-04
+Sarah Knafo,undecided,8,2026-05-28
+Francois Hollande,undecided,6,2026-05-28
+Bruno Le Maire,undecided,5,2024-04-18
+Gérald Darmanin,undecided,5,2024-04-18
+Elisabeth Borne,undecided,1,2023-09-04
 Jean Lassalle(RES),unknown,16,2024-12-09
-Bernard Cazeneuve (LC),unknown,8,2023-09-04
-Bruno Le Maire (RE),unknown,5,2024-04-18
 Yannick Jadot (LE),unknown,5,2023-09-04
-François Hollande (PS),unknown,4,2024-12-09
 François Bayrou (MD),unknown,2,2023-09-04
 Sandrine Rousseau (LE),unknown,2,2024-09-12
-Xavier Bertrand (NF),unknown,2,2024-09-12
 Carole Delga (PS),unknown,1,2023-04-07
 Jean Castex (IND),unknown,1,2023-09-04
 Michel Barnier (LR),unknown,1,2024-09-12
 Yaël Braun-Pivet (RE),unknown,1,2023-09-04
-Élisabeth Borne (RE),unknown,1,2023-09-04
