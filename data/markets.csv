@@ -214,6 +214,7 @@ date,candidate,prob_pct,source
 2026-07-06,Bernard Cazeneuve,0.75,polymarket
 2026-07-07,Bernard Cazeneuve,0.75,polymarket
 2026-07-08,Bernard Cazeneuve,0.75,polymarket
+2026-07-09,Bernard Cazeneuve,0.75,polymarket
 2025-11-14,Bruno Retailleau,28.0,polymarket
 2025-11-15,Bruno Retailleau,7.0,polymarket
 2025-11-16,Bruno Retailleau,7.5,polymarket
@@ -438,6 +439,7 @@ date,candidate,prob_pct,source
 2026-07-06,Bruno Retailleau,2.65,polymarket
 2026-07-07,Bruno Retailleau,2.65,polymarket
 2026-07-08,Bruno Retailleau,3.45,polymarket
+2026-07-09,Bruno Retailleau,3.85,polymarket
 2025-11-14,Carole Delga,19.5,polymarket
 2025-11-15,Carole Delga,0.9,polymarket
 2025-11-16,Carole Delga,0.85,polymarket
@@ -654,6 +656,7 @@ date,candidate,prob_pct,source
 2026-07-06,Carole Delga,0.65,polymarket
 2026-07-07,Carole Delga,0.65,polymarket
 2026-07-08,Carole Delga,0.65,polymarket
+2026-07-09,Carole Delga,0.65,polymarket
 2026-01-06,Clémence Guetté,0.6,polymarket
 2026-01-07,Clémence Guetté,0.45,polymarket
 2026-01-08,Clémence Guetté,0.45,polymarket
@@ -817,6 +820,7 @@ date,candidate,prob_pct,source
 2026-07-06,Clémence Guetté,0.6,polymarket
 2026-07-07,Clémence Guetté,0.55,polymarket
 2026-07-08,Clémence Guetté,0.55,polymarket
+2026-07-09,Clémence Guetté,0.55,polymarket
 2025-11-14,Clémentine Autain,38.0,polymarket
 2025-11-15,Clémentine Autain,1.65,polymarket
 2025-11-16,Clémentine Autain,1.75,polymarket
@@ -1030,6 +1034,7 @@ date,candidate,prob_pct,source
 2026-07-06,Clémentine Autain,0.65,polymarket
 2026-07-07,Clémentine Autain,0.65,polymarket
 2026-07-08,Clémentine Autain,0.65,polymarket
+2026-07-09,Clémentine Autain,0.65,polymarket
 2025-11-14,David Lisnard,16.5,polymarket
 2025-11-15,David Lisnard,4.5,polymarket
 2025-11-16,David Lisnard,5.55,polymarket
@@ -1250,6 +1255,7 @@ date,candidate,prob_pct,source
 2026-07-06,David Lisnard,1.55,polymarket
 2026-07-07,David Lisnard,1.55,polymarket
 2026-07-08,David Lisnard,1.45,polymarket
+2026-07-09,David Lisnard,1.45,polymarket
 2025-11-14,Dominique de Villepin,41.0,polymarket
 2025-11-15,Dominique de Villepin,2.55,polymarket
 2025-11-16,Dominique de Villepin,3.2,polymarket
@@ -1464,6 +1470,7 @@ date,candidate,prob_pct,source
 2026-07-06,Dominique de Villepin,2.95,polymarket
 2026-07-07,Dominique de Villepin,2.85,polymarket
 2026-07-08,Dominique de Villepin,2.65,polymarket
+2026-07-09,Dominique de Villepin,2.45,polymarket
 2025-11-14,Fabien Roussel,15.0,polymarket
 2025-11-15,Fabien Roussel,1.05,polymarket
 2025-11-16,Fabien Roussel,1.0,polymarket
@@ -1691,6 +1698,7 @@ date,candidate,prob_pct,source
 2026-07-06,Fabien Roussel,0.65,polymarket
 2026-07-07,Fabien Roussel,0.65,polymarket
 2026-07-08,Fabien Roussel,0.65,polymarket
+2026-07-09,Fabien Roussel,0.65,polymarket
 2025-11-14,François Asselineau,5.0,polymarket
 2025-11-15,François Asselineau,1.45,polymarket
 2025-11-16,François Asselineau,0.25,polymarket
@@ -1903,6 +1911,7 @@ date,candidate,prob_pct,source
 2026-07-06,François Asselineau,0.65,polymarket
 2026-07-07,François Asselineau,0.65,polymarket
 2026-07-08,François Asselineau,0.65,polymarket
+2026-07-09,François Asselineau,0.65,polymarket
 2025-11-14,François Bayrou,15.5,polymarket
 2025-11-15,François Bayrou,1.65,polymarket
 2025-11-16,François Bayrou,0.85,polymarket
@@ -2108,6 +2117,7 @@ date,candidate,prob_pct,source
 2026-07-06,François Bayrou,0.65,polymarket
 2026-07-07,François Bayrou,0.65,polymarket
 2026-07-08,François Bayrou,0.65,polymarket
+2026-07-09,François Bayrou,0.65,polymarket
 2025-11-14,François Hollande,13.0,polymarket
 2025-11-15,François Hollande,0.7,polymarket
 2025-11-16,François Hollande,0.7,polymarket
@@ -2329,6 +2339,7 @@ date,candidate,prob_pct,source
 2026-07-06,François Hollande,2.3,polymarket
 2026-07-07,François Hollande,2.85,polymarket
 2026-07-08,François Hollande,2.05,polymarket
+2026-07-09,François Hollande,2.25,polymarket
 2025-11-14,François Ruffin,5.0,polymarket
 2025-11-15,François Ruffin,2.1,polymarket
 2025-11-16,François Ruffin,2.85,polymarket
@@ -2541,6 +2552,7 @@ date,candidate,prob_pct,source
 2026-07-06,François Ruffin,0.65,polymarket
 2026-07-07,François Ruffin,0.65,polymarket
 2026-07-08,François Ruffin,0.65,polymarket
+2026-07-09,François Ruffin,0.65,polymarket
 2025-11-14,Gabriel Attal,15.5,polymarket
 2025-11-15,Gabriel Attal,6.0,polymarket
 2025-11-16,Gabriel Attal,6.5,polymarket
@@ -2764,6 +2776,7 @@ date,candidate,prob_pct,source
 2026-07-06,Gabriel Attal,2.85,polymarket
 2026-07-07,Gabriel Attal,2.85,polymarket
 2026-07-08,Gabriel Attal,2.45,polymarket
+2026-07-09,Gabriel Attal,2.45,polymarket
 2025-11-14,Gérald Darmanin,35.0,polymarket
 2025-11-15,Gérald Darmanin,2.15,polymarket
 2025-11-16,Gérald Darmanin,2.95,polymarket
@@ -2978,6 +2991,7 @@ date,candidate,prob_pct,source
 2026-07-06,Gérald Darmanin,0.65,polymarket
 2026-07-07,Gérald Darmanin,0.65,polymarket
 2026-07-08,Gérald Darmanin,0.65,polymarket
+2026-07-09,Gérald Darmanin,0.65,polymarket
 2025-11-14,Jean Castex,20.5,polymarket
 2025-11-15,Jean Castex,1.55,polymarket
 2025-11-16,Jean Castex,1.5,polymarket
@@ -3201,6 +3215,7 @@ date,candidate,prob_pct,source
 2026-07-06,Jean Castex,0.65,polymarket
 2026-07-07,Jean Castex,0.65,polymarket
 2026-07-08,Jean Castex,0.65,polymarket
+2026-07-09,Jean Castex,0.65,polymarket
 2025-11-14,Jean-Luc Mélenchon,17.5,polymarket
 2025-11-15,Jean-Luc Mélenchon,7.0,polymarket
 2025-11-16,Jean-Luc Mélenchon,7.0,polymarket
@@ -3419,6 +3434,7 @@ date,candidate,prob_pct,source
 2026-07-06,Jean-Luc Mélenchon,9.5,polymarket
 2026-07-07,Jean-Luc Mélenchon,9.5,polymarket
 2026-07-08,Jean-Luc Mélenchon,10.5,polymarket
+2026-07-09,Jean-Luc Mélenchon,11.5,polymarket
 2025-11-14,Jordan Bardella,34.0,polymarket
 2025-11-15,Jordan Bardella,26.5,polymarket
 2025-11-16,Jordan Bardella,28.0,polymarket
@@ -3628,7 +3644,8 @@ date,candidate,prob_pct,source
 2026-07-05,Jordan Bardella,26.5,polymarket
 2026-07-06,Jordan Bardella,25.5,polymarket
 2026-07-07,Jordan Bardella,26.5,polymarket
-2026-07-08,Jordan Bardella,5.1,polymarket
+2026-07-08,Jordan Bardella,5.35,polymarket
+2026-07-09,Jordan Bardella,5.7,polymarket
 2025-12-09,Juan Branco,2.1,polymarket
 2025-12-10,Juan Branco,1.1,polymarket
 2025-12-11,Juan Branco,1.1,polymarket
@@ -3838,6 +3855,7 @@ date,candidate,prob_pct,source
 2026-07-06,Juan Branco,0.65,polymarket
 2026-07-07,Juan Branco,0.65,polymarket
 2026-07-08,Juan Branco,0.65,polymarket
+2026-07-09,Juan Branco,0.65,polymarket
 2025-11-14,Laurent Wauquiez,33.0,polymarket
 2025-11-15,Laurent Wauquiez,3.1,polymarket
 2025-11-16,Laurent Wauquiez,4.65,polymarket
@@ -4055,6 +4073,7 @@ date,candidate,prob_pct,source
 2026-07-06,Laurent Wauquiez,0.75,polymarket
 2026-07-07,Laurent Wauquiez,0.75,polymarket
 2026-07-08,Laurent Wauquiez,0.75,polymarket
+2026-07-09,Laurent Wauquiez,0.75,polymarket
 2025-11-14,Manuel Bompard,20.5,polymarket
 2025-11-15,Manuel Bompard,0.5,polymarket
 2025-11-16,Manuel Bompard,0.55,polymarket
@@ -4281,6 +4300,7 @@ date,candidate,prob_pct,source
 2026-07-06,Manuel Bompard,0.65,polymarket
 2026-07-07,Manuel Bompard,0.65,polymarket
 2026-07-08,Manuel Bompard,0.65,polymarket
+2026-07-09,Manuel Bompard,0.65,polymarket
 2025-11-14,Marine Le Pen,15.5,polymarket
 2025-11-15,Marine Le Pen,12.5,polymarket
 2025-11-16,Marine Le Pen,11.0,polymarket
@@ -4496,7 +4516,8 @@ date,candidate,prob_pct,source
 2026-07-05,Marine Le Pen,8.5,polymarket
 2026-07-06,Marine Le Pen,8.5,polymarket
 2026-07-07,Marine Le Pen,8.5,polymarket
-2026-07-08,Marine Le Pen,29.15,polymarket
+2026-07-08,Marine Le Pen,28.75,polymarket
+2026-07-09,Marine Le Pen,26.55,polymarket
 2025-11-14,Marine Tondelier,18.0,polymarket
 2025-11-15,Marine Tondelier,1.35,polymarket
 2025-11-16,Marine Tondelier,1.95,polymarket
@@ -4714,6 +4735,7 @@ date,candidate,prob_pct,source
 2026-07-06,Marine Tondelier,0.65,polymarket
 2026-07-07,Marine Tondelier,0.65,polymarket
 2026-07-08,Marine Tondelier,0.65,polymarket
+2026-07-09,Marine Tondelier,0.65,polymarket
 2025-11-14,Mathilde Panot,32.5,polymarket
 2025-11-15,Mathilde Panot,1.5,polymarket
 2025-11-16,Mathilde Panot,1.5,polymarket
@@ -4926,6 +4948,7 @@ date,candidate,prob_pct,source
 2026-07-06,Mathilde Panot,0.65,polymarket
 2026-07-07,Mathilde Panot,0.65,polymarket
 2026-07-08,Mathilde Panot,0.65,polymarket
+2026-07-09,Mathilde Panot,0.65,polymarket
 2025-11-14,Michel Barnier,12.5,polymarket
 2025-11-15,Michel Barnier,0.9,polymarket
 2025-11-16,Michel Barnier,0.85,polymarket
@@ -5139,6 +5162,7 @@ date,candidate,prob_pct,source
 2026-07-06,Michel Barnier,0.75,polymarket
 2026-07-07,Michel Barnier,0.75,polymarket
 2026-07-08,Michel Barnier,0.75,polymarket
+2026-07-09,Michel Barnier,0.75,polymarket
 2025-11-14,Nicolas Dupont-Aignan,14.5,polymarket
 2025-11-15,Nicolas Dupont-Aignan,1.35,polymarket
 2025-11-16,Nicolas Dupont-Aignan,1.1,polymarket
@@ -5355,6 +5379,7 @@ date,candidate,prob_pct,source
 2026-07-06,Nicolas Dupont-Aignan,0.65,polymarket
 2026-07-07,Nicolas Dupont-Aignan,0.65,polymarket
 2026-07-08,Nicolas Dupont-Aignan,0.65,polymarket
+2026-07-09,Nicolas Dupont-Aignan,0.65,polymarket
 2025-11-14,Olivier Faure,23.5,polymarket
 2025-11-15,Olivier Faure,1.05,polymarket
 2025-11-16,Olivier Faure,1.0,polymarket
@@ -5571,6 +5596,7 @@ date,candidate,prob_pct,source
 2026-07-06,Olivier Faure,0.65,polymarket
 2026-07-07,Olivier Faure,0.65,polymarket
 2026-07-08,Olivier Faure,0.65,polymarket
+2026-07-09,Olivier Faure,0.65,polymarket
 2025-11-14,Raphaël Glucksmann,43.0,polymarket
 2025-11-15,Raphaël Glucksmann,8.0,polymarket
 2025-11-16,Raphaël Glucksmann,7.5,polymarket
@@ -5782,6 +5808,7 @@ date,candidate,prob_pct,source
 2026-07-06,Raphaël Glucksmann,1.65,polymarket
 2026-07-07,Raphaël Glucksmann,1.6,polymarket
 2026-07-08,Raphaël Glucksmann,1.85,polymarket
+2026-07-09,Raphaël Glucksmann,1.85,polymarket
 2025-12-09,Sarah Knafo,4.75,polymarket
 2025-12-10,Sarah Knafo,4.7,polymarket
 2025-12-11,Sarah Knafo,7.25,polymarket
@@ -5987,6 +6014,7 @@ date,candidate,prob_pct,source
 2026-07-06,Sarah Knafo,1.15,polymarket
 2026-07-07,Sarah Knafo,1.15,polymarket
 2026-07-08,Sarah Knafo,1.05,polymarket
+2026-07-09,Sarah Knafo,1.05,polymarket
 2026-01-09,Sébastien Lecornu,5.5,polymarket
 2026-01-10,Sébastien Lecornu,5.5,polymarket
 2026-01-11,Sébastien Lecornu,4.5,polymarket
@@ -6148,6 +6176,7 @@ date,candidate,prob_pct,source
 2026-07-06,Sébastien Lecornu,0.75,polymarket
 2026-07-07,Sébastien Lecornu,0.75,polymarket
 2026-07-08,Sébastien Lecornu,0.75,polymarket
+2026-07-09,Sébastien Lecornu,0.75,polymarket
 2025-11-14,Ségolène Royal,12.5,polymarket
 2025-11-15,Ségolène Royal,0.8,polymarket
 2025-11-16,Ségolène Royal,0.7,polymarket
@@ -6356,6 +6385,7 @@ date,candidate,prob_pct,source
 2026-07-06,Ségolène Royal,0.65,polymarket
 2026-07-07,Ségolène Royal,0.75,polymarket
 2026-07-08,Ségolène Royal,0.75,polymarket
+2026-07-09,Ségolène Royal,0.75,polymarket
 2025-11-14,Valérie Pécresse,28.0,polymarket
 2025-11-15,Valérie Pécresse,0.9,polymarket
 2025-11-16,Valérie Pécresse,0.5,polymarket
@@ -6573,6 +6603,7 @@ date,candidate,prob_pct,source
 2026-07-06,Valérie Pécresse,0.65,polymarket
 2026-07-07,Valérie Pécresse,0.65,polymarket
 2026-07-08,Valérie Pécresse,0.65,polymarket
+2026-07-09,Valérie Pécresse,0.65,polymarket
 2025-11-14,Xavier Bertrand,12.0,polymarket
 2025-11-15,Xavier Bertrand,1.25,polymarket
 2025-11-16,Xavier Bertrand,1.05,polymarket
@@ -6795,6 +6826,7 @@ date,candidate,prob_pct,source
 2026-07-06,Xavier Bertrand,0.65,polymarket
 2026-07-07,Xavier Bertrand,0.65,polymarket
 2026-07-08,Xavier Bertrand,0.65,polymarket
+2026-07-09,Xavier Bertrand,0.65,polymarket
 2025-11-14,Yaël Braun-Pivet,20.0,polymarket
 2025-11-15,Yaël Braun-Pivet,1.2,polymarket
 2025-11-16,Yaël Braun-Pivet,1.15,polymarket
@@ -7011,6 +7043,7 @@ date,candidate,prob_pct,source
 2026-07-06,Yaël Braun-Pivet,0.65,polymarket
 2026-07-07,Yaël Braun-Pivet,0.65,polymarket
 2026-07-08,Yaël Braun-Pivet,0.65,polymarket
+2026-07-09,Yaël Braun-Pivet,0.65,polymarket
 2025-11-14,Édouard Philippe,20.5,polymarket
 2025-11-15,Édouard Philippe,23.0,polymarket
 2025-11-16,Édouard Philippe,23.5,polymarket
@@ -7235,6 +7268,7 @@ date,candidate,prob_pct,source
 2026-07-06,Édouard Philippe,23.5,polymarket
 2026-07-07,Édouard Philippe,23.5,polymarket
 2026-07-08,Édouard Philippe,25.5,polymarket
+2026-07-09,Édouard Philippe,25.5,polymarket
 2025-11-14,Élisabeth Borne,26.0,polymarket
 2025-11-15,Élisabeth Borne,1.5,polymarket
 2025-11-16,Élisabeth Borne,1.5,polymarket
@@ -7449,6 +7483,7 @@ date,candidate,prob_pct,source
 2026-07-06,Élisabeth Borne,0.65,polymarket
 2026-07-07,Élisabeth Borne,0.65,polymarket
 2026-07-08,Élisabeth Borne,0.65,polymarket
+2026-07-09,Élisabeth Borne,0.65,polymarket
 2025-11-14,Éric Zemmour,21.5,polymarket
 2025-11-15,Éric Zemmour,1.2,polymarket
 2025-11-16,Éric Zemmour,1.85,polymarket
@@ -7662,3 +7697,4 @@ date,candidate,prob_pct,source
 2026-07-06,Éric Zemmour,0.75,polymarket
 2026-07-07,Éric Zemmour,0.85,polymarket
 2026-07-08,Éric Zemmour,0.85,polymarket
+2026-07-09,Éric Zemmour,0.85,polymarket
