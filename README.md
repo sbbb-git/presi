@@ -1,12 +1,19 @@
-# Sondages — élection présidentielle française 2027
+# Sondages & marchés — élection présidentielle française 2027
 
-Scraper hebdomadaire / semi-hebdomadaire des intentions de vote pour l'élection
-présidentielle de 2027, à partir de la page Wikipédia agrégée
-[*Opinion polling for the 2027 French presidential election*](https://en.wikipedia.org/wiki/Opinion_polling_for_the_2027_French_presidential_election),
-qui compile les sondages des principaux instituts (Ifop, Ipsos, OpinionWay,
-Elabe, Odoxa, Harris Interactive, BVA, Cluster17, Toluna…).
+Suivi hebdomadaire / semi-hebdomadaire de l'élection présidentielle de 2027,
+croisant **deux signaux** :
 
-## Ce que fait le scraper
+1. **Intentions de vote** (sondages) — page Wikipédia agrégée
+   [*Opinion polling for the 2027 French presidential election*](https://en.wikipedia.org/wiki/Opinion_polling_for_the_2027_French_presidential_election)
+   (Ifop, Ipsos, OpinionWay, Elabe, Odoxa, Harris, Cluster17…).
+2. **Probabilités de victoire** (marchés prédictifs) — consensus de
+   **Polymarket + Kalshi + Manifold**.
+
+Un [dashboard](docs/index.html) affiche les deux, plus le suivi des candidatures.
+Audit détaillé des sources : [`SOURCES.md`](SOURCES.md). Note d'analyse des
+dynamiques : [`analyse.md`](analyse.md).
+
+## Ce que fait le scraper de sondages
 
 - Parcourt les sections **Premier tour** et **Second tour** de la page (les
   scénarios purement hypothétiques sont exclus par défaut).
@@ -19,6 +26,20 @@ Elabe, Odoxa, Harris Interactive, BVA, Cluster17, Toluna…).
 
 L'historique des sondages est assuré par les **commits git successifs** : à
 chaque exécution, `data/polls.csv` est réécrit et le diff git montre l'évolution.
+
+## Le collecteur de marchés — `scrape_markets.py`
+
+Croise trois marchés prédictifs (API publiques, sans authentification) et calcule
+un **consensus** pondéré (Polymarket 1.0, Kalshi 1.0, Manifold 0.5 — play money) :
+
+- `data/markets.csv` — historique quotidien par (source, candidat)
+- `data/markets_consensus.csv` — consensus quotidien (moyenne pondérée)
+- `data/markets_snapshot.csv` — instantané du jour par plateforme + consensus
+
+Le signal mesure une probabilité de **victoire** (pas une intention de vote) et
+réagit à l'actualité en continu. Le croisement corrige les biais d'une plateforme
+isolée (contrats fins/sur-cotés lissés par le consensus). Chaque source est
+isolée : si une plateforme tombe, les autres passent.
 
 ## Le registre de candidatures — `candidates.csv`
 
@@ -73,17 +94,20 @@ registre, il est signalé en fin d'exécution (statut `unknown`).
 ```bash
 pip install -r requirements.txt
 
-# Exécution standard (1er + 2nd tour, filtre du registre) -> data/polls.csv
+# 1) Sondages (1er + 2nd tour, filtre du registre) -> data/polls.csv
 python scrape_polls.py
 
-# N'inclure que les hypothèses où TOUS les candidats testés sont déclarés
-python scrape_polls.py --declared-only
+# 2) Marchés prédictifs (consensus 3 plateformes) -> data/markets*.csv
+python scrape_markets.py
 
-# Tout récupérer sans filtre (debug), scénarios inclus
-python scrape_polls.py --no-filter --all-sections
+# 3) Dashboard -> docs/index.html
+python build_site.py
 
-# Source : Wikipédia française
-python scrape_polls.py --lang fr
+# Variantes sondages :
+python scrape_polls.py --declared-only              # hypothèses 100 % déclarés
+python scrape_polls.py --no-filter --all-sections   # tout (debug)
+python scrape_polls.py --lang fr                     # Wikipédia FR
+python scrape_polls.py --fallback-lang fr            # EN, bascule FR si vide
 ```
 
 ### Options principales

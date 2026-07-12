@@ -439,6 +439,9 @@ def main() -> int:
                          "(par defaut : 1er et 2nd tour uniquement)")
     ap.add_argument("--seen-out", default="data/candidates_seen.csv",
                     help="Synthese des candidats testes (aide au suivi)")
+    ap.add_argument("--fallback-lang", default=None, choices=sorted(WIKI_PAGES),
+                    help="Version de secours si la version primaire ne renvoie "
+                         "rien (ex. --fallback-lang fr)")
     args = ap.parse_args()
 
     registry = Registry.load(args.candidates)
@@ -448,10 +451,17 @@ def main() -> int:
         print(f"Filtre : hypotheses devant inclure [{req}], "
               f"exclusion des non-candidats.")
 
-    df = scrape(args.lang, registry,
-                apply_filters=not args.no_filter,
-                declared_only=args.declared_only,
-                all_sections=args.all_sections)
+    def run(lang):
+        return scrape(lang, registry,
+                      apply_filters=not args.no_filter,
+                      declared_only=args.declared_only,
+                      all_sections=args.all_sections)
+
+    df = run(args.lang)
+    if df.empty and args.fallback_lang and args.fallback_lang != args.lang:
+        print(f"Version {args.lang} vide, essai du fallback "
+              f"{args.fallback_lang}...", file=sys.stderr)
+        df = run(args.fallback_lang)
 
     if df.empty:
         print("Aucune donnee extraite. La structure de la page a peut-etre "

@@ -1,6 +1,9 @@
 # Suivi des déclarations de candidature — présidentielle 2027
 
-*Dernière vérification web : 2026-07-08. Méthode : pour chaque personnalité, recherche multi-sources dans la presse (AFP, Le Monde, France Info, Public Sénat, Euronews…), puis contre-vérification adversariale par un second agent cherchant à réfuter le statut avec des sources indépendantes plus récentes. Les statuts alimentent le registre `candidates.csv` qui pilote le filtrage des hypothèses du scraper.*
+*Dernière vérification web : 2026-07-08. Méthode : pour chaque personnalité, recherche multi-sources dans la presse (AFP, Le Monde, France Info, Public Sénat, Euronews, LCP…), puis contre-vérification adversariale par un second agent cherchant à réfuter le statut avec des sources indépendantes plus récentes. Les statuts alimentent `candidates.csv`, qui pilote le filtrage des hypothèses du scraper.*
+
+
+> **Taxonomie** — `declared` : candidature annoncée explicitement · `likely` : intention forte / investiture ou primaire en cours, pas d'annonce ferme · `undecided` : position non tranchée · `withdrawn` : a renoncé ou s'est rallié · `ineligible` : légalement empêché.
 
 
 ## Candidature déclarée
@@ -27,8 +30,6 @@ Jean-Luc Mélenchon a officialisé le 3 mai 2026, au journal télévisé de TF1,
 
 > « Oui, je suis candidat. Nous c'est carré, il y a une équipe, un programme et un seul candidat. » — 2026-05-03
 
-**Contradictions relevées :** Aucune contradiction entre sources sur le statut au 7 juillet 2026. Seule nuance : après sa défaite de 2022, Mélenchon avait évoqué vouloir « passer la main » ; cette position antérieure est caduque depuis l'annonce du 3 mai 2026.
-
 **Sources :**
 - [Présidentielle : Jean-Luc Mélenchon officialise sa candidature pour 2027](https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851) (LCP - Assemblée nationale, 2026-05-03)
 - [Jean-Luc Mélenchon officialise sa candidature à l'élection présidentielle de 2027](https://www.france24.com/fr/france/20260503-jean-luc-m%C3%A9lenchon-lfi-officialise-sa-candidature-%C3%A0-l-%C3%A9lection-pr%C3%A9sidentielle-de-2027) (France 24, 2026-05-03)
@@ -36,35 +37,6 @@ Jean-Luc Mélenchon a officialisé le 3 mai 2026, au journal télévisé de TF1,
 - [Mélenchon 2027 : Soutenez ma candidature à l'élection présidentielle (site officiel de campagne)](https://melenchon2027.fr/) (melenchon2027.fr, 2026)
 
 *Contre-vérification indépendante : statut confirmé.*
-
-### Marine Tondelier — 2025-10-22
-
-Au 7 juillet 2026, Marine Tondelier est candidate déclarée à la présidentielle de 2027 : elle a annoncé sa candidature le 22 octobre 2025 dans Le Nouvel Obs, puis a été investie le 8 décembre 2025 par Les Écologistes avec 86 % des voix pour représenter le parti à la primaire de la gauche prévue en octobre 2026. Début juillet 2026, un vote interne a confirmé (61 %) qu'elle porterait les couleurs des Écologistes à la présidentielle même en cas d'échec de cette primaire, à laquelle LFI, le PCF et Place publique refusent de participer. Sa stratégie est contestée en interne (Yannick Jadot, Sandrine Rousseau), mais sa candidature reste pleinement d'actualité.
-
-> « Un acte d'amour pour la France [...] Je ne me défilerai pas. » — 2025-10-22
-
-**Sources :**
-- [La patronne des Écologistes, Marine Tondelier, se déclare candidate à l'élection présidentielle de 2027](https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html) (France Info, 2025-10-22)
-- [Marine Tondelier désignée sans surprise pour représenter Les Écologistes à la primaire de la gauche en vue de la présidentielle 2027](https://www.franceinfo.fr/politique/eelv/presidentielle-2027-sans-surprise-marine-tondelier-a-ete-designee-pour-representer-les-ecologistes-a-la-primaire-de-la-gauche_7666159.html) (France Info, 2025-12-08)
-- [Présidentielle : Tondelier critiquée sur sa stratégie, les frondeurs écologistes menacés d'expulsion](https://www.france24.com/fr/info-en-continu/20260617-pr%C3%A9sidentielle-tondelier-critiqu%C3%A9e-sur-sa-strat%C3%A9gie-les-frondeurs-%C3%A9cologistes-menac%C3%A9s-d-expulsion) (France 24 (AFP), 2026-06-17)
-- [Marine Tondelier, candidate potentielle si la primaire de gauche échoue (61 % des adhérents pour qu'elle porte les couleurs du parti)](https://www.actuevreux.fr/politique/20893) (Actu Évreux, 2026-07-06)
-
-*Contre-vérification : non effectuée (à relancer).*
-
-### François Ruffin — 2026-01-26
-
-Au 7 juillet 2026, François Ruffin (député de la Somme, fondateur de Debout !) est candidat déclaré à la présidentielle 2027 : il a officialisé sa candidature le 26 janvier 2026 (« Je suis candidat à la primaire de gauche et à la présidentielle »), tout en participant à la primaire de la gauche « unitaire » prévue le 11 octobre 2026. Sa campagne est active : lancement en meeting à Lyon en avril 2026, environ 100 parrainages de maires sur 500 récoltés selon son équipe, et propositions programmatiques (Smic à 1 700 euros, loi sur la probité présentée le 2 juillet 2026). La presse de juillet 2026 (franceinfo, LCP) le qualifie systématiquement de « candidat à la présidentielle ».
-
-> « Je suis candidat à la primaire de gauche et à la présidentielle. [...] Et je ne reculerai pas : une fois récolté les 500 maires et les 100 000 soutiens. J'y vais pour gagner, et surtout j'y vais pour faire gagner les Français. » — 2026-01-26
-
-**Contradictions relevées :** Pas de contradiction sur le fond entre les sources, toutes le présentent comme candidat. Nuance : il est simultanément candidat à la primaire de la gauche « unitaire » du 11 octobre 2026 (dont la tenue reste incertaine, suspendue à la réponse du PS selon LCP du 02/07/2026), mais sa déclaration du 26/01/2026 (« je ne reculerai pas ») et sa collecte de parrainages indiquent une candidature à la présidentielle non conditionnée au résultat de la primaire dans son discours public.
-
-**Sources :**
-- [Primaire de la gauche : le député François Ruffin confirme qu'il sera bien candidat](https://www.franceinfo.fr/politique/primaire-de-la-gauche-le-depute-francois-ruffin-confirme-qu-il-sera-bien-candidat_7766543.html) (franceinfo, 2026-01-26)
-- [Présidentielle 2027 : après la polémique sur sa BD, François Ruffin à la relance sur le thème de la probité](https://lcp.fr/actualites/presidentielle-2027-apres-la-polemique-sur-sa-bd-francois-ruffin-a-la-relance-sur-le) (LCP - Assemblée nationale, 2026-07-02)
-- [Le député François Ruffin annonce le dépôt d'un texte pour mettre fin aux "privilèges" des anciens présidents](https://www.franceinfo.fr/elections/presidentielle/le-depute-francois-ruffin-annonce-le-depot-d-un-texte-pour-mettre-fin-aux-privileges-des-anciens-presidents_8096801.html) (franceinfo, 2026-07-06)
-
-*Contre-vérification : non effectuée (à relancer).*
 
 ### Gabriel Attal — 2026-05-22
 
@@ -78,7 +50,7 @@ Gabriel Attal a officiellement déclaré sa candidature à l'élection présiden
 - [Présidentielle 2027: Gabriel Attal épingle la "dimension morale" de la candidature de Marine Le Pen "condamnée à deux reprises"](https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-gabriel-attal-%C3%A9pingle-184006555.html) (Yahoo Actualités (BFMTV), 2026-07-07)
 - [«Nous avons encore nos plus belles pages à écrire» : Gabriel Attal officialise sa candidature à l'élection présidentielle](https://www.cnews.fr/france/2026-05-22/nous-avons-encore-nos-plus-belles-pages-ecrire-gabriel-attal-officialise-sa) (CNews, 2026-05-22)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 ### Édouard Philippe — 2026-07-05
 
@@ -92,7 +64,7 @@ Au 7 juillet 2026, Édouard Philippe (Horizons) est candidat déclaré à la pr�
 - [Présidentielle 2027 : Edouard Philippe avance en silence, mais se prépare activement](https://www.franceinfo.fr/politique/edouard-philippe/presidentielle-2027-edouard-philippe-avance-en-silence-mais-se-prepare-activement_7995317.html) (franceinfo, 2026-05-10)
 - [Le meeting d'Edouard Philippe le 5 juillet prochain sera décisif : son étoile a nettement pâli dans l'opinion, mais il est le mieux placé au centre](https://www.odoxa.fr/sondage/le-meeting-dedouard-philippe-le-5-juillet-prochain-sera-decisif-son-etoile-a-nettement-pali-dans-lopinion-mais-il-est-le-mieux-place-au-centre/) (Odoxa, 2026-07)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 ### Bruno Retailleau — 2026-04-19
 
@@ -106,7 +78,7 @@ Au 7 juillet 2026, Bruno Retailleau est candidat déclaré à l'élection prési
 - [Bruno Retailleau désigné candidat pour la présidentielle 2027](https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-designe-candidat-pour-la-presidentielle-2027_7951286.html) (franceinfo, 2026-04-20)
 - ["Il faut savoir se retirer" : Laurent Wauquiez met la pression sur Bruno Retailleau, et ouvre la porte à Edouard Philippe](https://www.lyonmag.com/article/152850/il-faut-savoir-se-retirer-laurent-wauquiez-met-la-pression-sur-bruno-retailleau-et-ouvre-la-porte-a-edouard-philippe) (Lyon Mag, 2026-07-01)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 
 ## Candidature probable
@@ -124,6 +96,20 @@ Au 7 juillet 2026, Raphaël Glucksmann (Place publique) n'a pas formellement dé
 
 *Contre-vérification indépendante : statut confirmé.*
 
+### Marine Tondelier — 2025-10-22
+
+Au 7 juillet 2026, Marine Tondelier est candidate déclarée à la présidentielle de 2027 : elle a annoncé sa candidature le 22 octobre 2025 dans Le Nouvel Obs, puis a été investie le 8 décembre 2025 par Les Écologistes avec 86 % des voix pour représenter le parti à la primaire de la gauche prévue en octobre 2026. Début juillet 2026, un vote interne a confirmé (61 %) qu'elle porterait les couleurs des Écologistes à la présidentielle même en cas d'échec de cette primaire, à laquelle LFI, le PCF et Place publique refusent de participer. Sa stratégie est contestée en interne (Yannick Jadot, Sandrine Rousseau), mais sa candidature reste pleinement d'actualité.
+
+> « Un acte d'amour pour la France [...] Je ne me défilerai pas. » — 2025-10-22
+
+**Sources :**
+- [La patronne des Écologistes, Marine Tondelier, se déclare candidate à l'élection présidentielle de 2027](https://www.franceinfo.fr/elections/presidentielle/la-patronne-des-ecologistes-marine-tondelier-se-declare-candidate-a-l-election-presidentielle-de-2027_7568824.html) (France Info, 2025-10-22)
+- [Marine Tondelier désignée sans surprise pour représenter Les Écologistes à la primaire de la gauche en vue de la présidentielle 2027](https://www.franceinfo.fr/politique/eelv/presidentielle-2027-sans-surprise-marine-tondelier-a-ete-designee-pour-representer-les-ecologistes-a-la-primaire-de-la-gauche_7666159.html) (France Info, 2025-12-08)
+- [Présidentielle : Tondelier critiquée sur sa stratégie, les frondeurs écologistes menacés d'expulsion](https://www.france24.com/fr/info-en-continu/20260617-pr%C3%A9sidentielle-tondelier-critiqu%C3%A9e-sur-sa-strat%C3%A9gie-les-frondeurs-%C3%A9cologistes-menac%C3%A9s-d-expulsion) (France 24 (AFP), 2026-06-17)
+- [Marine Tondelier, candidate potentielle si la primaire de gauche échoue (61 % des adhérents pour qu'elle porte les couleurs du parti)](https://www.actuevreux.fr/politique/20893) (Actu Évreux, 2026-07-06)
+
+*⚠️ Contre-vérification : statut initial `declared` corrigé en `likely` — L'annonce du 22 octobre 2025 est réelle et la citation n'est ni satirique ni sortie de contexte : Tondelier a bien annoncé au Nouvel Obs sa candidature pour 2027, et son site personnel (marinetondelier.fr) la présente comme « Candidate à l'élection présidentielle ». MAIS la concl*
+
 ### Fabien Roussel — 2026-07-05
 
 Au 40e congrès du PCF à Lille (3-5 juillet 2026), Fabien Roussel a été réélu secrétaire national avec 70,1 % des voix et a fait un pas décisif vers une nouvelle candidature à la présidentielle 2027, se disant "disponible et candidat" et estimant que le chemin était fait "à 85 %". L'officialisation de sa candidature reste toutefois suspendue à un vote des militants communistes prévu le 6 septembre 2026, quelques jours avant la Fête de l'Humanité. Au 7 juillet 2026, il n'est donc pas encore formellement investi, malgré une intention très clairement affirmée et des critiques internes ainsi que de LFI, qui lui reproche d'avoir affaibli Jean-Luc Mélenchon en 2022.
@@ -138,13 +124,24 @@ Au 40e congrès du PCF à Lille (3-5 juillet 2026), Fabien Roussel a été réé
 
 *Contre-vérification indépendante : statut confirmé.*
 
+### François Ruffin — 2026-01-26
+
+Au 7 juillet 2026, François Ruffin (député de la Somme, fondateur de Debout !) est candidat déclaré à la présidentielle 2027 : il a officialisé sa candidature le 26 janvier 2026 (« Je suis candidat à la primaire de gauche et à la présidentielle »), tout en participant à la primaire de la gauche « unitaire » prévue le 11 octobre 2026. Sa campagne est active : lancement en meeting à Lyon en avril 2026, environ 100 parrainages de maires sur 500 récoltés selon son équipe, et propositions programmatiques (Smic à 1 700 euros, loi sur la probité présentée le 2 juillet 2026). La presse de juillet 2026 (franceinfo, LCP) le qualifie systématiquement de « candidat à la présidentielle ».
+
+> « Je suis candidat à la primaire de gauche et à la présidentielle. [...] Et je ne reculerai pas : une fois récolté les 500 maires et les 100 000 soutiens. J'y vais pour gagner, et surtout j'y vais pour faire gagner les Français. » — 2026-01-26
+
+**Sources :**
+- [Primaire de la gauche : le député François Ruffin confirme qu'il sera bien candidat](https://www.franceinfo.fr/politique/primaire-de-la-gauche-le-depute-francois-ruffin-confirme-qu-il-sera-bien-candidat_7766543.html) (franceinfo, 2026-01-26)
+- [Présidentielle 2027 : après la polémique sur sa BD, François Ruffin à la relance sur le thème de la probité](https://lcp.fr/actualites/presidentielle-2027-apres-la-polemique-sur-sa-bd-francois-ruffin-a-la-relance-sur-le) (LCP - Assemblée nationale, 2026-07-02)
+- [Le député François Ruffin annonce le dépôt d'un texte pour mettre fin aux "privilèges" des anciens présidents](https://www.franceinfo.fr/elections/presidentielle/le-depute-francois-ruffin-annonce-le-depot-d-un-texte-pour-mettre-fin-aux-privileges-des-anciens-presidents_8096801.html) (franceinfo, 2026-07-06)
+
+*⚠️ Contre-vérification : statut initial `declared` corrigé en `likely` — Le statut "declared" ne tient pas. (1) Lecture erronée de la source initiale : dans l'article franceinfo du 26/01/2026, le "je serai candidat" ferme porte sur la primaire de la gauche unitaire du 11 octobre 2026, pas sur la présidentielle ; pour l'Élysée la formulation est au fut*
+
 ### Éric Zemmour — 2026-05-19
 
 Au 7 juillet 2026, Éric Zemmour (Reconquête) n'a pas formellement déclaré sa candidature à la présidentielle 2027, mais il affirme publiquement et de manière répétée qu'il sera candidat : le 19 mai 2026, il a répété à trois reprises « je serai candidat » (dépêche AFP), après avoir dit le 5 avril sur BFM politique avoir « tout [son] temps pour déclarer [sa] candidature ». Il mène une campagne de fait (livre actualisé, documentaire sur Canal+ fin juin 2026, programme via « La plateforme pour la France » avec Sarah Knafo) et réserve une annonce formelle « solennisée » pour plus tard ; aucune officialisation n'est intervenue entre le 19 mai et le 7 juillet 2026.
 
 > « Je serai candidat. » — 2026-05-19
-
-**Contradictions relevées :** Pas de contradiction substantielle entre sources récentes. Nuance : des posts de médias sociaux (Ohmymag, linfo.re sur Facebook) évoquent une candidature « confirmée » ou « officialisée », mais le second se rapporte vraisemblablement à la présidentielle 2022 et le premier reprend les propos du 19 mai 2026 (« je serai candidat »), que la dépêche AFP du même jour décrit explicitement comme antérieurs à une déclaration formelle encore à venir. La page Wikipédia de l'élection 2027 (consultée le 07/07/2026) ne le classe pas parmi les candidats déclarés, ce qui concorde avec le statut « likely ».
 
 **Sources :**
 - [Eric Zemmour à la reconquête de sa candidature (dépêche AFP)](https://www.lagazettefrance.fr/article/eric-zemmour-a-la-reconquete-de-sa-candidature) (La Gazette France / AFP, 2026-05-19)
@@ -152,7 +149,7 @@ Au 7 juillet 2026, Éric Zemmour (Reconquête) n'a pas formellement déclaré sa
 - [Présidentielle de 2027 : « J'ai tout mon temps pour déclarer ma candidature », affirme Éric Zemmour (BFM politique)](https://actu.orange.fr/videos/france/presidentielle-de-2027-j-ai-tout-mon-temps-pour-declarer-ma-candidature-affirme-eric-zemmour-CNT000002oeElG.html) (Orange Actu / BFMTV, 2026-04-05)
 - [Eric Zemmour relance sa machine présidentielle](https://www.sudradio.fr/sud-radio/eric-zemmour-a-la-reconquete-de-sa-candidature) (Sud Radio / AFP, 2026-05-19)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 ### Dominique de Villepin — 2026-05-29
 
@@ -167,7 +164,7 @@ Au 7 juillet 2026, Dominique de Villepin n'a pas formellement déclaré sa candi
 - [Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants](https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373) (LCP - Assemblée nationale, 2026-06-30)
 - [Dominique de Villepin : « Nous voulons être présents en 2027 »](https://lcp.fr/actualites/dominique-de-villepin-nous-voulons-etre-presents-en-2027-429413) (LCP - Assemblée nationale, 2026-01-19)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 
 ## Position non tranchée
@@ -192,15 +189,13 @@ Au 7 juillet 2026, Gérald Darmanin, garde des Sceaux, n'a pas déclaré sa cand
 
 > « Inch'Allah, on verra bien » — 2026-05-13
 
-**Contradictions relevées :** Légère ambivalence plutôt que contradiction : en avril 2025 il affichait son "envie" d'être candidat ("Est-ce que j'en ai envie ? Oui. Est-ce que j'ai le projet ? J'y travaille.", La Voix du Nord/franceinfo), alors qu'en mai 2026 il désigne Édouard Philippe comme "le mieux placé" tout en n'excluant pas sa propre candidature. Les sources les plus récentes (mai 2026) convergent sur un flou entretenu, sans annonce ni retrait.
-
 **Sources :**
 - [Présidentielle 2027 : "Inch'Allah, on verra bien", glisse Gérald Darmanin sur ses ambitions présidentielles](https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-inch-allah-on-verra-bien-glisse-gerald-darmanin-sur-ses-ambitions-presidentielles_8001371.html) (franceinfo, 2026-05-13)
 - [Edouard Philippe doit prouver aux Français "son envie d'être président de la République", estime Gérald Darmanin](https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-doit-prouver-aux-francais-son-envie-d-etre-president-de-la-republique-estime-gerald-darmanin_8028608.html) (franceinfo, 2026-05-26)
 - [Présidentielle 2027 : Gérald Darmanin révèle y "songer"](https://www.cnews.fr/france/2026-01-25/presidentielle-2027-gerald-darmanin-revele-y-songer-1807185) (CNews, 2026-01-25)
 - [Présidentielle 2027 : Darmanin prône une candidature unique "de la droite et du centre, et peut-être même de la gauche républicaine"](https://www.lejdd.fr/politique/presidentielle-2027-darmanin-prone-une-candidature-unique-de-la-droite-et-du-centre-et-peut-etre-meme-de-la-gauche-republicaine-169452) (Le JDD, 2026-05)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 
 ## A renoncé / rallié·e
@@ -212,8 +207,6 @@ Au 7 juillet 2026, Jordan Bardella n'est pas candidat à la présidentielle 2027
 > « Nous nous sommes promis de mener cette bataille ensemble dans ce procès en appel, de faire campagne ensemble après, peu importe ce qu'il sera décidé. [...] Je continuerai de la soutenir comme je l'ai toujours fait. » — 2026-07-06
 
 **Éligibilité :** Aucun problème d'éligibilité connu pour Bardella lui-même au 7 juillet 2026. C'est l'éligibilité de Marine Le Pen qui conditionnait son statut : l'arrêt d'appel du 7 juillet 2026 la laisse éligible pour 2027 (inéligibilité ferme réduite à 15 mois, déjà couverte par l'exécution provisoire depuis mars 2025), ce qui referme le scénario "plan B Bardella" ; son pourvoi en cassation laisse toutefois une incertitude juridique résiduelle.
-
-**Contradictions relevées :** Les sources antérieures au 7 juillet 2026 (dont franceinfo du 12 mai) présentaient Bardella comme candidat potentiel, la désignation dépendant de l'arrêt de la cour d'appel : elles sont périmées depuis le verdict du 7 juillet et l'annonce de candidature de Le Pen le soir même. Nuance : l'annonce de Le Pen datant du soir même, aucune déclaration verbatim de Bardella postérieure à cette annonce n'était encore indexée ; son ralliement repose sur ses propos du 6 juillet (campagne commune "peu importe ce qu'il sera décidé") et sur la déclaration de Le Pen le désignant comme futur Premier ministre. L'investiture formelle du RN n'interviendra qu'au congrès du 24 octobre 2026 à Orléans.
 
 **Sources :**
 - [Présidentielle : Marine Le Pen annonce qu'elle est « candidate » et se pourvoit en cassation](https://www.publicsenat.fr/actualites/politique/presidentielle-marine-le-pen-est-candidate-et-se-pourvoit-en-cassation) (Public Sénat, 2026-07-07)
@@ -229,15 +222,13 @@ Au 7 juillet 2026, Laurent Wauquiez n'est pas candidat à la présidentielle de 
 
 > « Bruno Retailleau est le candidat légitime des Républicains. [...] Je laisse de côté toute candidature de ma part. » — 2026-05-12
 
-**Contradictions relevées :** Pas de contradiction sur sa non-candidature personnelle, constante depuis mai 2026. En revanche, contradiction sur son soutien : le 12 mai 2026 il qualifiait Retailleau de « candidat légitime des Républicains », mais dès le 1er juillet 2026 (entretien au Figaro) il vante Édouard Philippe et presse Retailleau de se retirer, ce que Retailleau qualifie de « trahison ». Au 7 juillet 2026 (source la plus récente), il ne soutient formellement aucun candidat et dit que son candidat « sera celui du rassemblement de la droite ». Nuance résiduelle : sa formule « je laisse de côté » et son jeu d'influence laissent certains commentateurs penser qu'il garde une option de repositionnement, mais aucune source ne le présente comme candidat.
-
 **Sources :**
 - [Présidentielle 2027 : "Bruno Retailleau est le candidat légitime des Républicains", reconnaît Laurent Wauquiez](https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-bruno-retailleau-est-le-candidat-legitime-des-republicains-reconnait-laurent-wauquiez_7999268.html) (franceinfo, 2026-05-12)
 - ["Edouard Philippe peut incarner l'ordre et le sérieux" : Laurent Wauquiez, patron des députés LR, tend la main au candidat Horizons pour la présidentielle 2027](https://www.franceinfo.fr/elections/presidentielle/edouard-philippe-peut-incarner-l-ordre-et-le-serieux-laurent-wauquiez-tend-la-main-au-candidat-horizons-pour-la-presidentielle-2027_8088695.html) (franceinfo, 2026-07-01)
 - [Présidentielle 2027 : « Il faudra un seul candidat de droite sinon c'est Mélenchon », alerte Laurent Wauquiez](https://www.europe1.fr/politique/presidentielle-2027-il-faudra-un-seul-candidat-de-droite-sinon-cest-melenchon-alerte-laurent-wauquiez-967668) (Europe 1, 2026-07-07)
 - [Présidentielle 2027 : «Mon candidat sera celui du rassemblement de la droite», déclare Laurent Wauquiez](https://www.cnews.fr/france/2026-07-07/presidentielle-2027-mon-candidat-sera-celui-du-rassemblement-de-la-droite-declare) (CNews, 2026-07-07)
 
-*Contre-vérification : non effectuée (à relancer).*
+*Contre-vérification indépendante : statut confirmé.*
 
 
 ## Autres candidatures signalées par la presse (à confirmer)

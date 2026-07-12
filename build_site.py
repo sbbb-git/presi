@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import json
 import html
+import re
 from pathlib import Path
 
 import pandas as pd
@@ -134,10 +135,15 @@ def build_market_series(df: pd.DataFrame, min_last_prob: float = 2.0) -> list[di
 
     series = []
     for cand in top:
-        pts = df[df["candidate"] == cand].sort_values("date")
+        pts = df[df["candidate"] == cand].sort_values("date").copy()
+        # Lissage : mediane glissante 3 jours pour absorber les pics isoles
+        # (paris uniques en periode de faible liquidite), sans effacer les
+        # ruptures durables (ex. saut post-verdict).
+        pts["sm"] = (pts["prob_pct"].rolling(3, center=True, min_periods=1)
+                     .median())
         points = [
             {"x": d, "y": round(float(p), 1)}
-            for d, p in zip(pts["date"], pts["prob_pct"])
+            for d, p in zip(pts["date"], pts["sm"])
         ]
         if points:
             series.append({"name": cand, "short": surname(cand), "points": points})
@@ -206,8 +212,52 @@ def build_status_groups(cand_df: pd.DataFrame) -> dict:
     return groups
 
 
+def build_market_platform_table(snap_all: pd.DataFrame) -> list[dict]:
+    """Tableau candidat x plateforme (Polymarket / Kalshi / Manifold) + consensus."""
+    if snap_all.empty or "source" not in snap_all.columns:
+        return []
+    piv = snap_all.pivot_table(index="candidate", columns="source",
+                               values="prob_pct", aggfunc="last")
+    if "consensus" not in piv.columns:
+        return []
+    piv = piv.sort_values("consensus", ascending=False).head(10)
+    rows = []
+    for name, r in piv.iterrows():
+        rows.append({
+            "candidate": name,
+            "polymarket": r.get("polymarket"),
+            "kalshi": r.get("kalshi"),
+            "manifold": r.get("manifold"),
+            "consensus": r.get("consensus"),
+        })
+    return rows
+
+
+def extract_analyse(path: Path) -> str:
+    """Extrait la section 'L'essentiel' de analyse.md en HTML minimal."""
+    if not path.exists():
+        return ""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    out, capture = [], False
+    for ln in lines:
+        s = ln.strip()
+        if s.startswith("## "):
+            if capture:
+                break
+            capture = "essentiel" in s.lower()
+            continue
+        if capture and s:
+            # "1. texte" ou "- texte" -> item de liste
+            m = re.match(r"^(?:\d+\.|[-*])\s+(.*)$", s)
+            if m:
+                out.append(f"<li>{html.escape(m.group(1))}</li>")
+    if not out:
+        return ""
+    return "<ol>" + "".join(out) + "</ol>"
+
+
 def render_html(poll_series, market_series, latest_rows, status_groups,
-                meta) -> str:
+                market_platform_rows, analyse_html, meta) -> str:
     data_json = json.dumps(
         {"polls": poll_series, "markets": market_series, "palette": PALETTE},
         ensure_ascii=False,
@@ -264,8 +314,34 @@ def render_html(poll_series, market_series, latest_rows, status_groups,
         )
     table_html = "".join(trs) or "<tr><td colspan='7' class='muted'>Aucune donnée.</td></tr>"
 
+    # --- Tableau multi-plateformes (marches) ---
+    def cell(v):
+        return f"{v:.1f}%" if v is not None and pd.notna(v) else "—"
+    mtrs = []
+    for r in market_platform_rows:
+        mtrs.append(
+            f"<tr><td class='nm'>{html.escape(str(r['candidate']))}</td>"
+            f"<td class='num'>{cell(r.get('polymarket'))}</td>"
+            f"<td class='num'>{cell(r.get('kalshi'))}</td>"
+            f"<td class='num'>{cell(r.get('manifold'))}</td>"
+            f"<td class='num strong'>{cell(r.get('consensus'))}</td></tr>"
+        )
+    market_table = "".join(mtrs) or "<tr><td colspan='5' class='muted'>Aucune donnée.</td></tr>"
+
+    analyse_block = ""
+    if analyse_html:
+        analyse_block = (
+            "<h2>Où en est la course ?</h2>"
+            "<div class='note analyse'>" + analyse_html +
+            "<p class='src'>Synthèse au 7 juillet 2026 — détail chiffré et sources : "
+            "<a href='https://github.com/sbbb-git/presi/blob/"
+            "claude/election-poll-scraper-33nqxx/analyse.md'>analyse.md</a></p></div>"
+        )
+
     return TEMPLATE.format(
         data_json=data_json,
+        analyse_block=analyse_block,
+        market_table=market_table,
         status_cards="".join(status_html),
         table_rows=table_html,
         verified=html.escape(meta.get("verified", "—")),
@@ -313,6 +389,11 @@ TEMPLATE = r"""<!DOCTYPE html>
   .note {{ background:var(--surface-1); border:1px solid var(--border);
     border-left:3px solid var(--wait); border-radius:8px; padding:12px 16px;
     color:var(--text-2); font-size:.9rem; margin:12px 0; }}
+  .note.analyse {{ border-left-color:var(--soon); color:var(--text-1); }}
+  .note.analyse ol {{ margin:4px 0 0; padding-left:20px; }}
+  .note.analyse li {{ margin:6px 0; }}
+  .note.analyse .src {{ color:var(--muted); font-size:.82rem; margin:10px 0 0; }}
+  td.strong {{ font-weight:700; }}
   /* charts */
   .chart {{ width:100%; height:auto; display:block; }}
   .grid line {{ stroke:var(--grid); stroke-width:1; }}
@@ -386,26 +467,39 @@ TEMPLATE = r"""<!DOCTYPE html>
     <p>Intentions de vote (sondages) et probabilités de victoire (marché
        prédictif) · sources&nbsp;:
        <a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2027_French_presidential_election">Wikipédia</a> ·
-       <a href="https://polymarket.com/event/next-french-presidential-election">Polymarket</a></p>
+       marchés <a href="https://polymarket.com/event/next-french-presidential-election">Polymarket</a>,
+       Kalshi &amp; Manifold</p>
   </header>
 
   <div class="meta">
     <div><div class="big">{n_polls}</div><div class="lbl">sondages retenus</div></div>
     <div><div class="big">{n_pollsters}</div><div class="lbl">instituts</div></div>
     <div><div class="big">{market_leader}</div><div class="lbl">favori·te du marché</div></div>
-    <div><div class="big">{market_volume}</div><div class="lbl">volume Polymarket</div></div>
+    <div><div class="big">{market_volume}</div><div class="lbl">volume marchés</div></div>
     <div><div class="big">{updated}</div><div class="lbl">dernière mise à jour</div></div>
   </div>
 
-  <h2>Probabilité de victoire — marché prédictif Polymarket</h2>
+  {analyse_block}
+
+  <h2>Probabilité de victoire — consensus des marchés prédictifs</h2>
   <div class="card">
     <svg id="mchart" class="chart" viewBox="0 0 960 440" preserveAspectRatio="xMidYMid meet"
-         role="img" aria-label="Évolution des probabilités de victoire sur Polymarket"></svg>
+         role="img" aria-label="Évolution du consensus des probabilités de victoire"></svg>
     <div class="legend" id="mlegend"></div>
   </div>
-  <p class="note">Probabilité implicite (prix du marché) que chaque personnalité
-    remporte l'élection — signal continu, réagit à l'actualité en temps réel.
-    Ce n'est <b>pas</b> une intention de vote.</p>
+  <p class="note">Probabilité implicite qu'une personnalité <b>remporte</b>
+    l'élection — <b>consensus</b> pondéré de Polymarket, Kalshi et Manifold.
+    Signal continu, réagit à l'actualité en temps réel ; ce n'est <b>pas</b> une
+    intention de vote.</p>
+
+  <div class="card">
+    <table>
+      <thead><tr><th>Candidat</th><th class="num">Polymarket</th>
+        <th class="num">Kalshi</th><th class="num">Manifold</th>
+        <th class="num">Consensus</th></tr></thead>
+      <tbody>{market_table}</tbody>
+    </table>
+  </div>
 
   <h2>Intentions de vote — 1<sup>er</sup> tour (sondages)</h2>
   <div class="card">
@@ -436,10 +530,11 @@ TEMPLATE = r"""<!DOCTYPE html>
 
   <footer>
     Généré automatiquement depuis <code>data/polls.csv</code> (sondages, via
-    Wikipédia) et <code>data/markets.csv</code> (Polymarket). Le filtrage des
-    hypothèses est piloté par <code>candidates.csv</code>. Intentions de vote et
-    probabilités de marché sont des estimations, sujettes aux marges d'erreur et
-    à la volatilité. Cette page n'est affiliée à aucun institut ni plateforme.
+    Wikipédia) et <code>data/markets.csv</code> (Polymarket · Kalshi · Manifold).
+    Le filtrage des hypothèses est piloté par <code>candidates.csv</code> ; audit
+    des sources dans <code>SOURCES.md</code>. Intentions de vote et probabilités
+    de marché sont des estimations, sujettes aux marges d'erreur et à la
+    volatilité. Cette page n'est affiliée à aucun institut ni plateforme.
   </footer>
 </div>
 
@@ -567,9 +662,10 @@ const DATA = {data_json};
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--polls", default="data/polls.csv")
-    ap.add_argument("--markets", default="data/markets.csv")
+    ap.add_argument("--markets-consensus", default="data/markets_consensus.csv")
     ap.add_argument("--markets-snapshot", default="data/markets_snapshot.csv")
     ap.add_argument("--candidates", default="candidates.csv")
+    ap.add_argument("--analyse", default="analyse.md")
     ap.add_argument("--out", default="docs/index.html")
     args = ap.parse_args()
 
@@ -581,17 +677,22 @@ def main() -> int:
     df = pd.read_csv(polls_path, dtype={"percentage": float})
     cand_df = load_candidates(Path(args.candidates))
 
-    markets_path = Path(args.markets)
-    mdf = (pd.read_csv(markets_path) if markets_path.exists()
+    # Courbes marché = consensus ; tableau = snapshot par plateforme.
+    cons_path = Path(args.markets_consensus)
+    mdf = (pd.read_csv(cons_path) if cons_path.exists()
            else pd.DataFrame(columns=["date", "candidate", "prob_pct"]))
     snap_path = Path(args.markets_snapshot)
-    snap = (pd.read_csv(snap_path) if snap_path.exists()
-            else pd.DataFrame(columns=["candidate", "prob_pct", "volume_usd"]))
+    snap_all = (pd.read_csv(snap_path) if snap_path.exists()
+                else pd.DataFrame(columns=["source", "candidate", "prob_pct", "volume_usd"]))
+    snap = (snap_all[snap_all["source"] == "consensus"]
+            if "source" in snap_all.columns else snap_all)
 
     poll_series = build_poll_series(df)
     market_series = build_market_series(mdf)
     latest_rows = build_latest_table(df, cand_df, snap)
     status_groups = build_status_groups(cand_df)
+    market_platform_rows = build_market_platform_table(snap_all)
+    analyse_html = extract_analyse(Path(args.analyse))
 
     updated = ""
     if "scraped_at" in df.columns and not df["scraped_at"].dropna().empty:
@@ -626,7 +727,8 @@ def main() -> int:
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render_html(poll_series, market_series, latest_rows,
-                               status_groups, meta), encoding="utf-8")
+                               status_groups, market_platform_rows,
+                               analyse_html, meta), encoding="utf-8")
     print(f"Dashboard genere : {out} ({len(market_series)} courbes marche, "
           f"{len(poll_series)} courbes sondages, "
           f"{len(latest_rows)} candidats au tableau).")
