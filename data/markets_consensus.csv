@@ -253,6 +253,10 @@ date,candidate,prob_pct,source
 2026-07-14,Bernard Cazeneuve,2.73,consensus
 2026-07-15,Bernard Cazeneuve,2.73,consensus
 2026-07-16,Bernard Cazeneuve,2.71,consensus
+2026-07-17,Bernard Cazeneuve,2.69,consensus
+2026-07-18,Bernard Cazeneuve,2.69,consensus
+2026-07-19,Bernard Cazeneuve,2.67,consensus
+2026-07-20,Bernard Cazeneuve,2.65,consensus
 2025-11-02,Bruno Retailleau,5.0,consensus
 2025-11-03,Bruno Retailleau,5.0,consensus
 2025-11-04,Bruno Retailleau,5.0,consensus
@@ -510,6 +514,10 @@ date,candidate,prob_pct,source
 2026-07-14,Bruno Retailleau,3.15,consensus
 2026-07-15,Bruno Retailleau,3.15,consensus
 2026-07-16,Bruno Retailleau,3.15,consensus
+2026-07-17,Bruno Retailleau,3.13,consensus
+2026-07-18,Bruno Retailleau,3.11,consensus
+2026-07-19,Bruno Retailleau,3.11,consensus
+2026-07-20,Bruno Retailleau,3.11,consensus
 2025-11-14,David Lisnard,16.5,consensus
 2025-11-15,David Lisnard,4.5,consensus
 2025-11-16,David Lisnard,5.55,consensus
@@ -754,7 +762,11 @@ date,candidate,prob_pct,source
 2026-07-13,David Lisnard,2.06,consensus
 2026-07-14,David Lisnard,2.08,consensus
 2026-07-15,David Lisnard,2.06,consensus
-2026-07-16,David Lisnard,2.06,consensus
+2026-07-16,David Lisnard,2.08,consensus
+2026-07-17,David Lisnard,2.94,consensus
+2026-07-18,David Lisnard,2.86,consensus
+2026-07-19,David Lisnard,2.86,consensus
+2026-07-20,David Lisnard,2.66,consensus
 2025-11-14,Dominique de Villepin ,41.0,consensus
 2025-11-15,Dominique de Villepin ,2.55,consensus
 2025-11-16,Dominique de Villepin ,3.2,consensus
@@ -999,7 +1011,11 @@ date,candidate,prob_pct,source
 2026-07-13,Dominique de Villepin ,1.86,consensus
 2026-07-14,Dominique de Villepin ,1.78,consensus
 2026-07-15,Dominique de Villepin ,1.72,consensus
-2026-07-16,Dominique de Villepin ,1.74,consensus
+2026-07-16,Dominique de Villepin ,1.95,consensus
+2026-07-17,Dominique de Villepin ,2.03,consensus
+2026-07-18,Dominique de Villepin ,2.05,consensus
+2026-07-19,Dominique de Villepin ,2.05,consensus
+2026-07-20,Dominique de Villepin ,3.83,consensus
 2025-11-14,François Bayrou ,15.5,consensus
 2025-11-15,François Bayrou ,1.65,consensus
 2025-11-16,François Bayrou ,0.85,consensus
@@ -1245,6 +1261,10 @@ date,candidate,prob_pct,source
 2026-07-14,François Bayrou ,2.23,consensus
 2026-07-15,François Bayrou ,2.23,consensus
 2026-07-16,François Bayrou ,2.19,consensus
+2026-07-17,François Bayrou ,2.19,consensus
+2026-07-18,François Bayrou ,2.19,consensus
+2026-07-19,François Bayrou ,2.19,consensus
+2026-07-20,François Bayrou ,2.15,consensus
 2025-11-14,François Hollande,13.0,consensus
 2025-11-15,François Hollande,0.7,consensus
 2025-11-16,François Hollande,0.7,consensus
@@ -1489,7 +1509,11 @@ date,candidate,prob_pct,source
 2026-07-13,François Hollande,2.8,consensus
 2026-07-14,François Hollande,2.82,consensus
 2026-07-15,François Hollande,2.86,consensus
-2026-07-16,François Hollande,3.04,consensus
+2026-07-16,François Hollande,3.0,consensus
+2026-07-17,François Hollande,2.96,consensus
+2026-07-18,François Hollande,22.1,consensus
+2026-07-19,François Hollande,22.12,consensus
+2026-07-20,François Hollande,22.1,consensus
 2025-11-05,François Ruffin,6.78,consensus
 2025-11-06,François Ruffin,6.78,consensus
 2025-11-07,François Ruffin,6.78,consensus
@@ -1743,7 +1767,11 @@ date,candidate,prob_pct,source
 2026-07-13,François Ruffin,1.18,consensus
 2026-07-14,François Ruffin,1.18,consensus
 2026-07-15,François Ruffin,1.14,consensus
-2026-07-16,François Ruffin,1.1,consensus
+2026-07-16,François Ruffin,1.14,consensus
+2026-07-17,François Ruffin,1.1,consensus
+2026-07-18,François Ruffin,1.1,consensus
+2026-07-19,François Ruffin,1.1,consensus
+2026-07-20,François Ruffin,1.1,consensus
 2025-11-02,Gabriel Attal ,10.0,consensus
 2025-11-03,Gabriel Attal ,11.0,consensus
 2025-11-04,Gabriel Attal ,11.83,consensus
@@ -2001,6 +2029,10 @@ date,candidate,prob_pct,source
 2026-07-14,Gabriel Attal ,2.47,consensus
 2026-07-15,Gabriel Attal ,2.58,consensus
 2026-07-16,Gabriel Attal ,2.58,consensus
+2026-07-17,Gabriel Attal ,2.58,consensus
+2026-07-18,Gabriel Attal ,2.58,consensus
+2026-07-19,Gabriel Attal ,2.56,consensus
+2026-07-20,Gabriel Attal ,2.58,consensus
 2025-11-14,Gérald Darmanin,35.0,consensus
 2025-11-15,Gérald Darmanin,2.15,consensus
 2025-11-16,Gérald Darmanin,2.95,consensus
@@ -2246,6 +2278,10 @@ date,candidate,prob_pct,source
 2026-07-14,Gérald Darmanin,2.75,consensus
 2026-07-15,Gérald Darmanin,2.67,consensus
 2026-07-16,Gérald Darmanin,2.67,consensus
+2026-07-17,Gérald Darmanin,2.67,consensus
+2026-07-18,Gérald Darmanin,2.67,consensus
+2026-07-19,Gérald Darmanin,2.67,consensus
+2026-07-20,Gérald Darmanin,2.67,consensus
 2025-11-02,Jean-Luc Mélenchon,3.0,consensus
 2025-11-03,Jean-Luc Mélenchon,3.0,consensus
 2025-11-04,Jean-Luc Mélenchon,3.0,consensus
@@ -2502,7 +2538,11 @@ date,candidate,prob_pct,source
 2026-07-13,Jean-Luc Mélenchon,10.37,consensus
 2026-07-14,Jean-Luc Mélenchon,10.67,consensus
 2026-07-15,Jean-Luc Mélenchon,10.77,consensus
-2026-07-16,Jean-Luc Mélenchon,10.77,consensus
+2026-07-16,Jean-Luc Mélenchon,11.12,consensus
+2026-07-17,Jean-Luc Mélenchon,11.12,consensus
+2026-07-18,Jean-Luc Mélenchon,11.12,consensus
+2026-07-19,Jean-Luc Mélenchon,11.12,consensus
+2026-07-20,Jean-Luc Mélenchon,11.6,consensus
 2025-10-20,Jordan Bardella,27.27,consensus
 2025-10-21,Jordan Bardella,27.27,consensus
 2025-10-22,Jordan Bardella,27.27,consensus
@@ -2772,7 +2812,11 @@ date,candidate,prob_pct,source
 2026-07-13,Jordan Bardella,4.61,consensus
 2026-07-14,Jordan Bardella,6.34,consensus
 2026-07-15,Jordan Bardella,6.42,consensus
-2026-07-16,Jordan Bardella,5.28,consensus
+2026-07-16,Jordan Bardella,5.38,consensus
+2026-07-17,Jordan Bardella,5.46,consensus
+2026-07-18,Jordan Bardella,5.52,consensus
+2026-07-19,Jordan Bardella,5.52,consensus
+2026-07-20,Jordan Bardella,5.42,consensus
 2025-11-02,Marine Le Pen,11.0,consensus
 2025-11-03,Marine Le Pen,8.27,consensus
 2025-11-04,Marine Le Pen,9.74,consensus
@@ -3029,7 +3073,11 @@ date,candidate,prob_pct,source
 2026-07-13,Marine Le Pen,30.09,consensus
 2026-07-14,Marine Le Pen,31.11,consensus
 2026-07-15,Marine Le Pen,32.06,consensus
-2026-07-16,Marine Le Pen,33.42,consensus
+2026-07-16,Marine Le Pen,33.1,consensus
+2026-07-17,Marine Le Pen,33.02,consensus
+2026-07-18,Marine Le Pen,33.16,consensus
+2026-07-19,Marine Le Pen,32.61,consensus
+2026-07-20,Marine Le Pen,34.53,consensus
 2025-11-02,Raphaël Glucksmann,5.0,consensus
 2025-11-03,Raphaël Glucksmann,9.3,consensus
 2025-11-04,Raphaël Glucksmann,9.3,consensus
@@ -3287,6 +3335,10 @@ date,candidate,prob_pct,source
 2026-07-14,Raphaël Glucksmann,1.85,consensus
 2026-07-15,Raphaël Glucksmann,1.82,consensus
 2026-07-16,Raphaël Glucksmann,1.85,consensus
+2026-07-17,Raphaël Glucksmann,1.85,consensus
+2026-07-18,Raphaël Glucksmann,1.85,consensus
+2026-07-19,Raphaël Glucksmann,1.85,consensus
+2026-07-20,Raphaël Glucksmann,1.78,consensus
 2025-12-09,Sarah Knafo,4.75,consensus
 2025-12-10,Sarah Knafo,4.7,consensus
 2025-12-11,Sarah Knafo,7.25,consensus
@@ -3507,6 +3559,10 @@ date,candidate,prob_pct,source
 2026-07-14,Sarah Knafo,2.37,consensus
 2026-07-15,Sarah Knafo,2.37,consensus
 2026-07-16,Sarah Knafo,2.37,consensus
+2026-07-17,Sarah Knafo,2.37,consensus
+2026-07-18,Sarah Knafo,2.37,consensus
+2026-07-19,Sarah Knafo,2.37,consensus
+2026-07-20,Sarah Knafo,2.37,consensus
 2026-01-09,Sébastien Lecornu,5.5,consensus
 2026-01-10,Sébastien Lecornu,5.5,consensus
 2026-01-11,Sébastien Lecornu,4.78,consensus
@@ -3695,7 +3751,11 @@ date,candidate,prob_pct,source
 2026-07-13,Sébastien Lecornu,1.23,consensus
 2026-07-14,Sébastien Lecornu,1.23,consensus
 2026-07-15,Sébastien Lecornu,1.23,consensus
-2026-07-16,Sébastien Lecornu,1.19,consensus
+2026-07-16,Sébastien Lecornu,1.23,consensus
+2026-07-17,Sébastien Lecornu,1.45,consensus
+2026-07-18,Sébastien Lecornu,1.35,consensus
+2026-07-19,Sébastien Lecornu,1.59,consensus
+2026-07-20,Sébastien Lecornu,1.59,consensus
 2025-10-15,Édouard Philippe,20.0,consensus
 2025-10-16,Édouard Philippe,20.0,consensus
 2025-10-17,Édouard Philippe,20.0,consensus
@@ -3970,7 +4030,11 @@ date,candidate,prob_pct,source
 2026-07-13,Édouard Philippe,25.48,consensus
 2026-07-14,Édouard Philippe,25.51,consensus
 2026-07-15,Édouard Philippe,26.81,consensus
-2026-07-16,Édouard Philippe,26.81,consensus
+2026-07-16,Édouard Philippe,26.41,consensus
+2026-07-17,Édouard Philippe,26.41,consensus
+2026-07-18,Édouard Philippe,38.81,consensus
+2026-07-19,Édouard Philippe,38.73,consensus
+2026-07-20,Édouard Philippe,38.73,consensus
 2025-11-14,Éric Zemmour,21.5,consensus
 2025-11-15,Éric Zemmour,1.2,consensus
 2025-11-16,Éric Zemmour,1.85,consensus
@@ -4215,4 +4279,8 @@ date,candidate,prob_pct,source
 2026-07-13,Éric Zemmour,1.17,consensus
 2026-07-14,Éric Zemmour,1.17,consensus
 2026-07-15,Éric Zemmour,1.17,consensus
-2026-07-16,Éric Zemmour,1.13,consensus
+2026-07-16,Éric Zemmour,1.17,consensus
+2026-07-17,Éric Zemmour,1.13,consensus
+2026-07-18,Éric Zemmour,1.13,consensus
+2026-07-19,Éric Zemmour,1.13,consensus
+2026-07-20,Éric Zemmour,1.13,consensus
