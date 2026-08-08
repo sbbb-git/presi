@@ -30,9 +30,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Scraper les sondages
-        run: python scrape_polls.py
+        run: python scrape_polls.py --fallback-lang fr
 
-      - name: Scraper le marche predictif (Polymarket)
+      - name: Scraper les marches predictifs (Polymarket, Kalshi, Manifold)
         run: python scrape_markets.py
         continue-on-error: true  # le dashboard reste generable sans le marche
 

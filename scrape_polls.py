@@ -20,13 +20,12 @@ import argparse
 import io
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from dateutil import parser as dateparser
 
 # Wikipedia demande un User-Agent descriptif avec un contact.
 USER_AGENT = (
@@ -36,7 +35,7 @@ USER_AGENT = (
 
 WIKI_PAGES = {
     "en": "Opinion polling for the 2027 French presidential election",
-    "fr": "Liste de sondages sur l'election presidentielle francaise de 2027",
+    "fr": "Liste de sondages sur l'élection présidentielle française de 2027",
 }
 
 # --- Perimetre du suivi (choix produit) --------------------------------------
@@ -212,26 +211,69 @@ def parse_sample_size(value) -> int | None:
     return int(s) if s else None
 
 
-def parse_end_date(raw: str) -> str | None:
+# Mois en clair, FR et EN. dateutil ne connait pas le francais : sans cette
+# table, "1er fevrier" etait interprete par fuzzy=True comme le mois COURANT,
+# ce qui fabriquait des dates fausses au lieu d'echouer.
+MONTHS = {
+    "janvier": 1, "january": 1, "jan": 1,
+    "fevrier": 2, "february": 2, "feb": 2, "fev": 2,
+    "mars": 3, "march": 3, "mar": 3,
+    "avril": 4, "april": 4, "apr": 4, "avr": 4,
+    "mai": 5, "may": 5,
+    "juin": 6, "june": 6, "jun": 6,
+    "juillet": 7, "july": 7, "jul": 7, "juil": 7,
+    "aout": 8, "august": 8, "aug": 8,
+    "septembre": 9, "september": 9, "sep": 9, "sept": 9,
+    "octobre": 10, "october": 10, "oct": 10,
+    "novembre": 11, "november": 11, "nov": 11,
+    "decembre": 12, "december": 12, "dec": 12,
+}
+MONTH_RE = "|".join(sorted(MONTHS, key=len, reverse=True))
+
+
+def parse_end_date(raw: str, default_year: int | None = None) -> str | None:
     """Extrait une date ISO (fin de terrain) depuis un libelle du type
-    "29 Jun-1 Jul 2026" ou "1-3 juillet 2026". Best-effort ; renvoie None
-    si l'analyse echoue."""
+    "29 Jun-1 Jul 2026", "1-3 juillet 2026" ou "31 janvier - 1er fevrier".
+
+    L'annee peut venir du libelle ou, a defaut, du contexte de section
+    (`default_year`, ex. le titre "Annee 2026" de Wikipedia FR).
+
+    Renvoie None si la date ne peut pas etre etablie avec certitude : on
+    prefere une valeur manquante a une date inventee.
+    """
     if not raw:
         return None
-    raw = re.sub(r"\[.*?\]", "", str(raw)).strip()
-    # Prend le dernier segment apres un tiret (la fin de la periode).
-    tail = re.split(r"[–—-]", raw)[-1].strip()
-    # Complete l'annee/mois manquants a partir du libelle complet.
-    year = re.search(r"\b(20\d{2})\b", raw)
-    for candidate in (tail, raw):
-        try:
-            dt = dateparser.parse(candidate, dayfirst=True, fuzzy=True)
-            if year:
-                dt = dt.replace(year=int(year.group(1)))
-            return dt.date().isoformat()
-        except (ValueError, OverflowError):
-            continue
-    return None
+    # Normalisation propre aux dates : on remplace la ponctuation par des
+    # ESPACES (normalise() la supprime, ce qui collerait "9-10 Jul" en
+    # "910 jul" et rendrait le libelle illisible).
+    txt = re.sub(r"\[.*?\]", " ", str(raw)).lower()
+    for a, b in (("é", "e"), ("è", "e"), ("ê", "e"), ("ë", "e"), ("à", "a"),
+                 ("â", "a"), ("î", "i"), ("ï", "i"), ("ô", "o"), ("û", "u"),
+                 ("ù", "u"), ("ç", "c")):
+        txt = txt.replace(a, b)
+    txt = re.sub(r"[^a-z0-9]+", " ", txt).strip()
+    if not txt:
+        return None
+
+    year_m = re.search(r"\b(20\d{2})\b", txt)
+    year = int(year_m.group(1)) if year_m else default_year
+    if year is None:
+        return None
+
+    # Couples (jour, mois) dans l'ordre du libelle. Le jour retenu pour chaque
+    # mois est celui qui le precede immediatement, donc la FIN de la periode :
+    #   "9 10 jul 2026"      -> [(10, 7)]
+    #   "31 janvier 1er fev" -> [(31, 1), (1, 2)]
+    pairs = [(int(d), MONTHS[mo]) for d, mo in
+             re.findall(rf"\b(\d{{1,2}})\s*(?:er)?\s+({MONTH_RE})\b", txt)]
+    if not pairs:
+        return None
+    day, month = pairs[-1]  # derniere paire = fin de terrain
+
+    try:
+        return date(year, month, day).isoformat()
+    except ValueError:
+        return None
 
 
 def find_column(columns: list[str], *keywords: str) -> str | None:
@@ -256,7 +298,8 @@ def is_meta_column(col: str) -> bool:
 
 def parse_table(table_html: str, section: str, subsection: str, hypothesis_id: int,
                 scraped_at: str, registry: Registry,
-                apply_filters: bool, declared_only: bool) -> list[dict]:
+                apply_filters: bool, declared_only: bool,
+                context_year: int | None = None) -> list[dict]:
     """Transforme un tableau de sondages en lignes tidy.
 
     Le filtrage est pilote par le registre :
@@ -325,10 +368,16 @@ def parse_table(table_html: str, section: str, subsection: str, hypothesis_id: i
         # Ignore les lignes de resultats reels (ex. "2022 election").
         if re.search(r"\b(19|20)\d{2}\b.*election|election.*result", pollster, re.I):
             continue
+        # Wikipedia FR intercale des lignes d'evenement ("Marine Le Pen
+        # officialise sa candidature (7 juillet 2026).") : ce sont des phrases,
+        # pas des instituts. Un nom de sondeur est court et sans ponctuation
+        # de fin de phrase.
+        if len(pollster) > 45 or pollster.rstrip().endswith("."):
+            continue
 
         raw_date = str(r.get(date_col, "")) if date_col else ""
         raw_date = re.sub(r"\[.*?\]", "", raw_date).strip()
-        end_date = parse_end_date(raw_date)
+        end_date = parse_end_date(raw_date, context_year)
         sample = parse_sample_size(r.get(sample_col)) if sample_col else None
 
         for c in candidate_cols:
@@ -370,6 +419,7 @@ def scrape(lang: str, registry: Registry, apply_filters: bool,
 
     section = ""
     subsection = ""
+    context_year: int | None = None
     hypothesis_id = 0
     all_rows: list[dict] = []
 
@@ -378,9 +428,16 @@ def scrape(lang: str, registry: Registry, apply_filters: bool,
         if name in ("h2", "h3", "h4"):
             heading = el.get_text(" ", strip=True)
             heading = re.sub(r"\[.*?\]|\bedit\b", "", heading).strip()
+            # Wikipedia FR groupe les tableaux sous "Annee 2026" : c'est la
+            # seule source de l'annee pour les libelles type "8-10 juillet".
+            ym = re.search(r"\b(?:ann[ée]e|year)\s+(20\d{2})\b", heading, re.I)
+            if ym:
+                context_year = int(ym.group(1))
             if name == "h2":
                 section = heading
                 subsection = ""
+                if not ym:
+                    context_year = None
             else:
                 subsection = heading
         elif name == "table" and "wikitable" in (el.get("class") or []):
@@ -388,7 +445,8 @@ def scrape(lang: str, registry: Registry, apply_filters: bool,
                 continue
             hypothesis_id += 1
             rows = parse_table(str(el), section, subsection, hypothesis_id,
-                               scraped_at, registry, apply_filters, declared_only)
+                               scraped_at, registry, apply_filters, declared_only,
+                               context_year=context_year)
             all_rows.extend(rows)
 
     df = pd.DataFrame(all_rows)

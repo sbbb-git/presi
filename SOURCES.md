@@ -17,10 +17,31 @@ hypothèses de 1er tour, licence, faisabilité du scraping).*
 | Europe Elects | 1,5 | autre | ❌ | ❌ | Écartée |
 
 **Choix** : Wikipédia EN reste la source primaire des sondages (parser
-`scrape_polls.py`), avec un fallback FR léger. NSPpolls, malgré un format JSON
-idéal, est inutilisable (aucune donnée depuis avril 2022). La Commission des
-sondages (registre officiel exhaustif) est le meilleur candidat pour une future
-3ᵉ source de validation, au prix d'un parsing PDF.
+`scrape_polls.py`), avec un fallback FR (`--fallback-lang fr`). NSPpolls, malgré
+un format JSON idéal, est inutilisable (aucune donnée depuis avril 2022). La
+Commission des sondages (registre officiel exhaustif) est le meilleur candidat
+pour une future 3ᵉ source de validation, au prix d'un parsing PDF.
+
+### Le fallback FR, et pourquoi le parsing de dates est strict
+
+Le fallback FR était inopérant à sa mise en place (titre de page sans accents →
+404) et, une fois joignable, produisait des dates **fausses** : la page FR écrit
+les périodes sans année (« 8-10 juillet », l'année vivant dans le titre de
+section « Année 2026 »), et `dateutil(fuzzy=True)` comblait les trous avec le
+mois **courant** au lieu d'échouer. Corrigé en trois points :
+
+- mois FR/EN reconnus explicitement (plus de `fuzzy`) ;
+- année héritée du titre de section quand le libellé ne la porte pas ;
+- **refus de deviner** : sans jour ni année certains, la date vaut `None` — une
+  valeur manquante est préférable à une date inventée.
+
+Les lignes d'événement que la page FR intercale entre les sondages (« Marine Le
+Pen officialise sa candidature (7 juillet 2026). ») sont écartées : ce sont des
+phrases, pas des instituts.
+
+Contrôle croisé : les deux pages donnent le même terrain le plus récent
+(**10 juillet 2026**), EN 9 instituts / FR 12. Aucun sondage depuis cette date
+n'est un trou de collecte — c'est la **pause estivale** des instituts français.
 
 ## Marchés prédictifs (probabilité de victoire)
 
