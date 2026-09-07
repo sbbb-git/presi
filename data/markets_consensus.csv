@@ -302,312 +302,10 @@ date,candidate,prob_pct,source
 2026-09-01,Bernard Cazeneuve,2.53,consensus
 2026-09-02,Bernard Cazeneuve,2.53,consensus
 2026-09-03,Bernard Cazeneuve,2.53,consensus
-2025-11-02,Bruno Retailleau,5.0,consensus
-2025-11-03,Bruno Retailleau,5.0,consensus
-2025-11-04,Bruno Retailleau,5.0,consensus
-2025-11-05,Bruno Retailleau,3.81,consensus
-2025-11-06,Bruno Retailleau,3.81,consensus
-2025-11-07,Bruno Retailleau,3.81,consensus
-2025-11-08,Bruno Retailleau,3.81,consensus
-2025-11-09,Bruno Retailleau,3.81,consensus
-2025-11-10,Bruno Retailleau,3.81,consensus
-2025-11-11,Bruno Retailleau,3.81,consensus
-2025-11-12,Bruno Retailleau,3.81,consensus
-2025-11-13,Bruno Retailleau,3.81,consensus
-2025-11-14,Bruno Retailleau,19.94,consensus
-2025-11-15,Bruno Retailleau,5.94,consensus
-2025-11-16,Bruno Retailleau,6.27,consensus
-2025-11-17,Bruno Retailleau,6.27,consensus
-2025-11-18,Bruno Retailleau,5.27,consensus
-2025-11-19,Bruno Retailleau,5.27,consensus
-2025-11-20,Bruno Retailleau,7.6,consensus
-2025-11-21,Bruno Retailleau,6.27,consensus
-2025-11-22,Bruno Retailleau,4.6,consensus
-2025-11-23,Bruno Retailleau,4.27,consensus
-2025-11-24,Bruno Retailleau,4.27,consensus
-2025-11-25,Bruno Retailleau,5.27,consensus
-2025-11-26,Bruno Retailleau,4.6,consensus
-2025-11-27,Bruno Retailleau,4.6,consensus
-2025-11-28,Bruno Retailleau,4.6,consensus
-2025-11-29,Bruno Retailleau,4.94,consensus
-2025-11-30,Bruno Retailleau,4.94,consensus
-2025-12-01,Bruno Retailleau,4.94,consensus
-2025-12-02,Bruno Retailleau,6.19,consensus
-2025-12-03,Bruno Retailleau,6.52,consensus
-2025-12-04,Bruno Retailleau,6.19,consensus
-2025-12-05,Bruno Retailleau,6.19,consensus
-2025-12-06,Bruno Retailleau,6.85,consensus
-2025-12-07,Bruno Retailleau,5.85,consensus
-2025-12-08,Bruno Retailleau,6.52,consensus
-2025-12-09,Bruno Retailleau,6.52,consensus
-2025-12-10,Bruno Retailleau,6.52,consensus
-2025-12-11,Bruno Retailleau,5.32,consensus
-2025-12-12,Bruno Retailleau,4.65,consensus
-2025-12-13,Bruno Retailleau,4.65,consensus
-2025-12-14,Bruno Retailleau,4.65,consensus
-2025-12-15,Bruno Retailleau,4.32,consensus
-2025-12-16,Bruno Retailleau,4.32,consensus
-2025-12-17,Bruno Retailleau,4.32,consensus
-2025-12-18,Bruno Retailleau,4.32,consensus
-2025-12-19,Bruno Retailleau,4.32,consensus
-2025-12-20,Bruno Retailleau,4.02,consensus
-2025-12-21,Bruno Retailleau,3.98,consensus
-2025-12-22,Bruno Retailleau,3.92,consensus
-2025-12-23,Bruno Retailleau,2.88,consensus
-2025-12-24,Bruno Retailleau,3.02,consensus
-2025-12-25,Bruno Retailleau,2.88,consensus
-2025-12-26,Bruno Retailleau,2.88,consensus
-2025-12-27,Bruno Retailleau,2.88,consensus
-2025-12-28,Bruno Retailleau,2.92,consensus
-2025-12-29,Bruno Retailleau,2.88,consensus
-2025-12-30,Bruno Retailleau,2.95,consensus
-2025-12-31,Bruno Retailleau,3.08,consensus
-2026-01-01,Bruno Retailleau,3.42,consensus
-2026-01-02,Bruno Retailleau,3.38,consensus
-2026-01-03,Bruno Retailleau,3.35,consensus
-2026-01-04,Bruno Retailleau,3.32,consensus
-2026-01-05,Bruno Retailleau,3.52,consensus
-2026-01-06,Bruno Retailleau,3.42,consensus
-2026-01-07,Bruno Retailleau,3.25,consensus
-2026-01-08,Bruno Retailleau,3.25,consensus
-2026-01-09,Bruno Retailleau,7.95,consensus
-2026-01-10,Bruno Retailleau,3.95,consensus
-2026-01-11,Bruno Retailleau,3.97,consensus
-2026-01-12,Bruno Retailleau,4.01,consensus
-2026-01-13,Bruno Retailleau,4.21,consensus
-2026-01-14,Bruno Retailleau,4.17,consensus
-2026-01-15,Bruno Retailleau,4.07,consensus
-2026-01-16,Bruno Retailleau,4.15,consensus
-2026-01-17,Bruno Retailleau,4.11,consensus
-2026-01-18,Bruno Retailleau,4.07,consensus
-2026-01-19,Bruno Retailleau,4.09,consensus
-2026-01-20,Bruno Retailleau,4.11,consensus
-2026-01-21,Bruno Retailleau,4.27,consensus
-2026-01-22,Bruno Retailleau,4.11,consensus
-2026-01-23,Bruno Retailleau,4.13,consensus
-2026-01-24,Bruno Retailleau,4.11,consensus
-2026-01-25,Bruno Retailleau,4.07,consensus
-2026-01-26,Bruno Retailleau,4.05,consensus
-2026-01-27,Bruno Retailleau,4.09,consensus
-2026-01-28,Bruno Retailleau,4.09,consensus
-2026-01-29,Bruno Retailleau,4.09,consensus
-2026-01-30,Bruno Retailleau,3.93,consensus
-2026-01-31,Bruno Retailleau,5.23,consensus
-2026-02-01,Bruno Retailleau,4.13,consensus
-2026-02-02,Bruno Retailleau,4.17,consensus
-2026-02-03,Bruno Retailleau,4.17,consensus
-2026-02-04,Bruno Retailleau,4.17,consensus
-2026-02-05,Bruno Retailleau,4.29,consensus
-2026-02-06,Bruno Retailleau,4.21,consensus
-2026-02-07,Bruno Retailleau,4.23,consensus
-2026-02-08,Bruno Retailleau,4.25,consensus
-2026-02-09,Bruno Retailleau,4.21,consensus
-2026-02-10,Bruno Retailleau,6.61,consensus
-2026-02-11,Bruno Retailleau,6.37,consensus
-2026-02-12,Bruno Retailleau,6.49,consensus
-2026-02-13,Bruno Retailleau,6.61,consensus
-2026-02-14,Bruno Retailleau,7.29,consensus
-2026-02-15,Bruno Retailleau,7.41,consensus
-2026-02-16,Bruno Retailleau,7.77,consensus
-2026-02-17,Bruno Retailleau,7.29,consensus
-2026-02-18,Bruno Retailleau,6.99,consensus
-2026-02-19,Bruno Retailleau,6.81,consensus
-2026-02-20,Bruno Retailleau,6.75,consensus
-2026-02-21,Bruno Retailleau,7.13,consensus
-2026-02-22,Bruno Retailleau,6.77,consensus
-2026-02-23,Bruno Retailleau,6.53,consensus
-2026-02-24,Bruno Retailleau,6.53,consensus
-2026-02-25,Bruno Retailleau,6.51,consensus
-2026-02-26,Bruno Retailleau,7.05,consensus
-2026-02-27,Bruno Retailleau,7.33,consensus
-2026-02-28,Bruno Retailleau,7.15,consensus
-2026-03-01,Bruno Retailleau,6.79,consensus
-2026-03-02,Bruno Retailleau,6.55,consensus
-2026-03-03,Bruno Retailleau,6.59,consensus
-2026-03-04,Bruno Retailleau,7.55,consensus
-2026-03-05,Bruno Retailleau,7.45,consensus
-2026-03-06,Bruno Retailleau,6.33,consensus
-2026-03-07,Bruno Retailleau,4.47,consensus
-2026-03-08,Bruno Retailleau,4.93,consensus
-2026-03-09,Bruno Retailleau,5.43,consensus
-2026-03-10,Bruno Retailleau,6.73,consensus
-2026-03-11,Bruno Retailleau,6.59,consensus
-2026-03-12,Bruno Retailleau,7.08,consensus
-2026-03-13,Bruno Retailleau,5.08,consensus
-2026-03-14,Bruno Retailleau,4.06,consensus
-2026-03-15,Bruno Retailleau,4.06,consensus
-2026-03-16,Bruno Retailleau,4.06,consensus
-2026-03-17,Bruno Retailleau,4.88,consensus
-2026-03-18,Bruno Retailleau,5.22,consensus
-2026-03-19,Bruno Retailleau,2.82,consensus
-2026-03-20,Bruno Retailleau,2.88,consensus
-2026-03-21,Bruno Retailleau,2.74,consensus
-2026-03-22,Bruno Retailleau,2.9,consensus
-2026-03-23,Bruno Retailleau,2.62,consensus
-2026-03-24,Bruno Retailleau,2.64,consensus
-2026-03-25,Bruno Retailleau,2.52,consensus
-2026-03-26,Bruno Retailleau,2.72,consensus
-2026-03-27,Bruno Retailleau,2.62,consensus
-2026-03-28,Bruno Retailleau,2.62,consensus
-2026-03-29,Bruno Retailleau,2.44,consensus
-2026-03-30,Bruno Retailleau,2.38,consensus
-2026-03-31,Bruno Retailleau,2.34,consensus
-2026-04-01,Bruno Retailleau,2.24,consensus
-2026-04-02,Bruno Retailleau,2.26,consensus
-2026-04-03,Bruno Retailleau,2.1,consensus
-2026-04-04,Bruno Retailleau,1.94,consensus
-2026-04-05,Bruno Retailleau,1.94,consensus
-2026-04-06,Bruno Retailleau,1.94,consensus
-2026-04-07,Bruno Retailleau,2.24,consensus
-2026-04-08,Bruno Retailleau,2.24,consensus
-2026-04-09,Bruno Retailleau,2.12,consensus
-2026-04-10,Bruno Retailleau,2.12,consensus
-2026-04-11,Bruno Retailleau,2.12,consensus
-2026-04-12,Bruno Retailleau,2.12,consensus
-2026-04-13,Bruno Retailleau,2.26,consensus
-2026-04-14,Bruno Retailleau,2.26,consensus
-2026-04-15,Bruno Retailleau,2.06,consensus
-2026-04-16,Bruno Retailleau,2.06,consensus
-2026-04-17,Bruno Retailleau,2.28,consensus
-2026-04-18,Bruno Retailleau,2.28,consensus
-2026-04-19,Bruno Retailleau,2.42,consensus
-2026-04-20,Bruno Retailleau,2.22,consensus
-2026-04-21,Bruno Retailleau,2.3,consensus
-2026-04-22,Bruno Retailleau,2.18,consensus
-2026-04-23,Bruno Retailleau,2.2,consensus
-2026-04-24,Bruno Retailleau,2.22,consensus
-2026-04-25,Bruno Retailleau,2.26,consensus
-2026-04-26,Bruno Retailleau,2.42,consensus
-2026-04-27,Bruno Retailleau,2.42,consensus
-2026-04-28,Bruno Retailleau,2.58,consensus
-2026-04-29,Bruno Retailleau,2.5,consensus
-2026-04-30,Bruno Retailleau,2.5,consensus
-2026-05-01,Bruno Retailleau,2.46,consensus
-2026-05-02,Bruno Retailleau,2.46,consensus
-2026-05-03,Bruno Retailleau,2.46,consensus
-2026-05-04,Bruno Retailleau,2.26,consensus
-2026-05-05,Bruno Retailleau,2.34,consensus
-2026-05-06,Bruno Retailleau,2.34,consensus
-2026-05-07,Bruno Retailleau,2.3,consensus
-2026-05-08,Bruno Retailleau,2.3,consensus
-2026-05-09,Bruno Retailleau,2.3,consensus
-2026-05-10,Bruno Retailleau,2.3,consensus
-2026-05-11,Bruno Retailleau,2.3,consensus
-2026-05-12,Bruno Retailleau,2.3,consensus
-2026-05-13,Bruno Retailleau,2.3,consensus
-2026-05-14,Bruno Retailleau,2.2,consensus
-2026-05-15,Bruno Retailleau,2.16,consensus
-2026-05-16,Bruno Retailleau,2.18,consensus
-2026-05-17,Bruno Retailleau,2.39,consensus
-2026-05-18,Bruno Retailleau,2.41,consensus
-2026-05-19,Bruno Retailleau,2.39,consensus
-2026-05-20,Bruno Retailleau,2.41,consensus
-2026-05-21,Bruno Retailleau,2.39,consensus
-2026-05-22,Bruno Retailleau,2.39,consensus
-2026-05-23,Bruno Retailleau,2.41,consensus
-2026-05-24,Bruno Retailleau,2.39,consensus
-2026-05-25,Bruno Retailleau,2.37,consensus
-2026-05-26,Bruno Retailleau,2.35,consensus
-2026-05-27,Bruno Retailleau,2.35,consensus
-2026-05-28,Bruno Retailleau,2.35,consensus
-2026-05-29,Bruno Retailleau,2.35,consensus
-2026-05-30,Bruno Retailleau,2.35,consensus
-2026-05-31,Bruno Retailleau,2.39,consensus
-2026-06-01,Bruno Retailleau,2.37,consensus
-2026-06-02,Bruno Retailleau,2.44,consensus
-2026-06-03,Bruno Retailleau,2.44,consensus
-2026-06-04,Bruno Retailleau,2.44,consensus
-2026-06-05,Bruno Retailleau,2.44,consensus
-2026-06-06,Bruno Retailleau,2.48,consensus
-2026-06-07,Bruno Retailleau,2.48,consensus
-2026-06-08,Bruno Retailleau,2.44,consensus
-2026-06-09,Bruno Retailleau,2.44,consensus
-2026-06-10,Bruno Retailleau,2.44,consensus
-2026-06-11,Bruno Retailleau,2.16,consensus
-2026-06-12,Bruno Retailleau,2.12,consensus
-2026-06-13,Bruno Retailleau,2.08,consensus
-2026-06-14,Bruno Retailleau,1.99,consensus
-2026-06-15,Bruno Retailleau,1.95,consensus
-2026-06-16,Bruno Retailleau,1.91,consensus
-2026-06-17,Bruno Retailleau,1.87,consensus
-2026-06-18,Bruno Retailleau,1.87,consensus
-2026-06-19,Bruno Retailleau,1.87,consensus
-2026-06-20,Bruno Retailleau,1.93,consensus
-2026-06-21,Bruno Retailleau,2.01,consensus
-2026-06-22,Bruno Retailleau,2.15,consensus
-2026-06-23,Bruno Retailleau,2.11,consensus
-2026-06-24,Bruno Retailleau,2.15,consensus
-2026-06-25,Bruno Retailleau,2.15,consensus
-2026-06-26,Bruno Retailleau,2.15,consensus
-2026-06-27,Bruno Retailleau,2.31,consensus
-2026-06-28,Bruno Retailleau,2.31,consensus
-2026-06-29,Bruno Retailleau,2.31,consensus
-2026-06-30,Bruno Retailleau,2.35,consensus
-2026-07-01,Bruno Retailleau,2.33,consensus
-2026-07-02,Bruno Retailleau,2.25,consensus
-2026-07-03,Bruno Retailleau,2.23,consensus
-2026-07-04,Bruno Retailleau,2.23,consensus
-2026-07-05,Bruno Retailleau,2.25,consensus
-2026-07-06,Bruno Retailleau,2.23,consensus
-2026-07-07,Bruno Retailleau,2.23,consensus
-2026-07-08,Bruno Retailleau,2.55,consensus
-2026-07-09,Bruno Retailleau,2.71,consensus
-2026-07-10,Bruno Retailleau,3.35,consensus
-2026-07-11,Bruno Retailleau,3.21,consensus
-2026-07-12,Bruno Retailleau,3.17,consensus
-2026-07-13,Bruno Retailleau,3.15,consensus
-2026-07-14,Bruno Retailleau,3.15,consensus
-2026-07-15,Bruno Retailleau,3.15,consensus
-2026-07-16,Bruno Retailleau,3.15,consensus
-2026-07-17,Bruno Retailleau,3.13,consensus
-2026-07-18,Bruno Retailleau,3.11,consensus
-2026-07-19,Bruno Retailleau,3.11,consensus
-2026-07-20,Bruno Retailleau,3.13,consensus
-2026-07-21,Bruno Retailleau,3.11,consensus
-2026-07-22,Bruno Retailleau,3.13,consensus
-2026-07-23,Bruno Retailleau,2.67,consensus
-2026-07-24,Bruno Retailleau,2.67,consensus
-2026-07-25,Bruno Retailleau,2.55,consensus
-2026-07-26,Bruno Retailleau,2.61,consensus
-2026-07-27,Bruno Retailleau,2.57,consensus
-2026-07-28,Bruno Retailleau,2.59,consensus
-2026-07-29,Bruno Retailleau,2.59,consensus
-2026-07-30,Bruno Retailleau,2.63,consensus
-2026-07-31,Bruno Retailleau,2.99,consensus
-2026-08-01,Bruno Retailleau,2.99,consensus
-2026-08-02,Bruno Retailleau,2.95,consensus
-2026-08-03,Bruno Retailleau,2.15,consensus
-2026-08-04,Bruno Retailleau,2.15,consensus
-2026-08-05,Bruno Retailleau,2.83,consensus
-2026-08-06,Bruno Retailleau,2.83,consensus
-2026-08-07,Bruno Retailleau,2.83,consensus
-2026-08-08,Bruno Retailleau,2.83,consensus
-2026-08-09,Bruno Retailleau,2.07,consensus
-2026-08-10,Bruno Retailleau,2.03,consensus
-2026-08-11,Bruno Retailleau,2.03,consensus
-2026-08-12,Bruno Retailleau,2.47,consensus
-2026-08-13,Bruno Retailleau,2.47,consensus
-2026-08-14,Bruno Retailleau,2.31,consensus
-2026-08-15,Bruno Retailleau,2.31,consensus
-2026-08-16,Bruno Retailleau,2.31,consensus
-2026-08-17,Bruno Retailleau,2.35,consensus
-2026-08-18,Bruno Retailleau,2.35,consensus
-2026-08-19,Bruno Retailleau,2.35,consensus
-2026-08-20,Bruno Retailleau,2.35,consensus
-2026-08-21,Bruno Retailleau,2.39,consensus
-2026-08-22,Bruno Retailleau,2.45,consensus
-2026-08-23,Bruno Retailleau,2.45,consensus
-2026-08-24,Bruno Retailleau,2.41,consensus
-2026-08-25,Bruno Retailleau,2.31,consensus
-2026-08-26,Bruno Retailleau,2.31,consensus
-2026-08-27,Bruno Retailleau,2.43,consensus
-2026-08-28,Bruno Retailleau,2.43,consensus
-2026-08-29,Bruno Retailleau,2.35,consensus
-2026-08-30,Bruno Retailleau,2.31,consensus
-2026-08-31,Bruno Retailleau,2.31,consensus
-2026-09-01,Bruno Retailleau,2.31,consensus
-2026-09-02,Bruno Retailleau,2.31,consensus
-2026-09-03,Bruno Retailleau,1.31,consensus
+2026-09-04,Bernard Cazeneuve,2.53,consensus
+2026-09-05,Bernard Cazeneuve,2.53,consensus
+2026-09-06,Bernard Cazeneuve,2.53,consensus
+2026-09-07,Bernard Cazeneuve,2.49,consensus
 2025-11-14,David Lisnard,16.5,consensus
 2025-11-15,David Lisnard,4.5,consensus
 2025-11-16,David Lisnard,5.55,consensus
@@ -902,6 +600,10 @@ date,candidate,prob_pct,source
 2026-09-01,David Lisnard,2.0,consensus
 2026-09-02,David Lisnard,1.8,consensus
 2026-09-03,David Lisnard,1.68,consensus
+2026-09-04,David Lisnard,1.53,consensus
+2026-09-05,David Lisnard,3.33,consensus
+2026-09-06,David Lisnard,3.27,consensus
+2026-09-07,David Lisnard,3.33,consensus
 2025-11-14,Dominique de Villepin ,41.0,consensus
 2025-11-15,Dominique de Villepin ,2.55,consensus
 2025-11-16,Dominique de Villepin ,3.2,consensus
@@ -1196,6 +898,10 @@ date,candidate,prob_pct,source
 2026-09-01,Dominique de Villepin ,1.87,consensus
 2026-09-02,Dominique de Villepin ,1.87,consensus
 2026-09-03,Dominique de Villepin ,1.55,consensus
+2026-09-04,Dominique de Villepin ,2.99,consensus
+2026-09-05,Dominique de Villepin ,2.99,consensus
+2026-09-06,Dominique de Villepin ,2.77,consensus
+2026-09-07,Dominique de Villepin ,1.29,consensus
 2025-11-14,François Bayrou ,15.5,consensus
 2025-11-15,François Bayrou ,1.65,consensus
 2025-11-16,François Bayrou ,0.85,consensus
@@ -1490,6 +1196,10 @@ date,candidate,prob_pct,source
 2026-09-01,François Bayrou ,2.15,consensus
 2026-09-02,François Bayrou ,2.15,consensus
 2026-09-03,François Bayrou ,2.15,consensus
+2026-09-04,François Bayrou ,2.15,consensus
+2026-09-05,François Bayrou ,2.15,consensus
+2026-09-06,François Bayrou ,2.11,consensus
+2026-09-07,François Bayrou ,2.11,consensus
 2025-11-14,François Hollande,13.0,consensus
 2025-11-15,François Hollande,0.7,consensus
 2025-11-16,François Hollande,0.7,consensus
@@ -1783,7 +1493,11 @@ date,candidate,prob_pct,source
 2026-08-31,François Hollande,4.93,consensus
 2026-09-01,François Hollande,4.95,consensus
 2026-09-02,François Hollande,4.95,consensus
-2026-09-03,François Hollande,3.77,consensus
+2026-09-03,François Hollande,3.75,consensus
+2026-09-04,François Hollande,3.86,consensus
+2026-09-05,François Hollande,3.94,consensus
+2026-09-06,François Hollande,4.74,consensus
+2026-09-07,François Hollande,4.46,consensus
 2025-11-05,François Ruffin,6.78,consensus
 2025-11-06,François Ruffin,6.78,consensus
 2025-11-07,François Ruffin,6.78,consensus
@@ -2087,6 +1801,10 @@ date,candidate,prob_pct,source
 2026-09-01,François Ruffin,1.06,consensus
 2026-09-02,François Ruffin,1.06,consensus
 2026-09-03,François Ruffin,1.06,consensus
+2026-09-04,François Ruffin,1.06,consensus
+2026-09-05,François Ruffin,1.06,consensus
+2026-09-06,François Ruffin,1.02,consensus
+2026-09-07,François Ruffin,1.02,consensus
 2025-11-02,Gabriel Attal ,10.0,consensus
 2025-11-03,Gabriel Attal ,11.0,consensus
 2025-11-04,Gabriel Attal ,11.83,consensus
@@ -2393,6 +2111,10 @@ date,candidate,prob_pct,source
 2026-09-01,Gabriel Attal ,3.06,consensus
 2026-09-02,Gabriel Attal ,2.76,consensus
 2026-09-03,Gabriel Attal ,2.74,consensus
+2026-09-04,Gabriel Attal ,2.78,consensus
+2026-09-05,Gabriel Attal ,3.92,consensus
+2026-09-06,Gabriel Attal ,3.37,consensus
+2026-09-07,Gabriel Attal ,3.61,consensus
 2025-11-14,Gérald Darmanin,35.0,consensus
 2025-11-15,Gérald Darmanin,2.15,consensus
 2025-11-16,Gérald Darmanin,2.95,consensus
@@ -2687,6 +2409,10 @@ date,candidate,prob_pct,source
 2026-09-01,Gérald Darmanin,2.59,consensus
 2026-09-02,Gérald Darmanin,2.59,consensus
 2026-09-03,Gérald Darmanin,2.59,consensus
+2026-09-04,Gérald Darmanin,2.59,consensus
+2026-09-05,Gérald Darmanin,2.59,consensus
+2026-09-06,Gérald Darmanin,2.59,consensus
+2026-09-07,Gérald Darmanin,2.59,consensus
 2025-11-02,Jean-Luc Mélenchon,3.0,consensus
 2025-11-03,Jean-Luc Mélenchon,3.0,consensus
 2025-11-04,Jean-Luc Mélenchon,3.0,consensus
@@ -2734,27 +2460,27 @@ date,candidate,prob_pct,source
 2025-12-16,Jean-Luc Mélenchon,7.86,consensus
 2025-12-17,Jean-Luc Mélenchon,7.86,consensus
 2025-12-18,Jean-Luc Mélenchon,7.86,consensus
-2025-12-19,Jean-Luc Mélenchon,7.31,consensus
-2025-12-20,Jean-Luc Mélenchon,4.91,consensus
-2025-12-21,Jean-Luc Mélenchon,4.91,consensus
-2025-12-22,Jean-Luc Mélenchon,4.71,consensus
-2025-12-23,Jean-Luc Mélenchon,4.71,consensus
-2025-12-24,Jean-Luc Mélenchon,4.71,consensus
-2025-12-25,Jean-Luc Mélenchon,4.51,consensus
-2025-12-26,Jean-Luc Mélenchon,4.51,consensus
-2025-12-27,Jean-Luc Mélenchon,4.91,consensus
-2025-12-28,Jean-Luc Mélenchon,5.31,consensus
-2025-12-29,Jean-Luc Mélenchon,4.91,consensus
-2025-12-30,Jean-Luc Mélenchon,5.31,consensus
-2025-12-31,Jean-Luc Mélenchon,5.11,consensus
-2026-01-01,Jean-Luc Mélenchon,6.07,consensus
-2026-01-02,Jean-Luc Mélenchon,5.87,consensus
-2026-01-03,Jean-Luc Mélenchon,5.87,consensus
-2026-01-04,Jean-Luc Mélenchon,5.87,consensus
-2026-01-05,Jean-Luc Mélenchon,6.41,consensus
-2026-01-06,Jean-Luc Mélenchon,5.73,consensus
-2026-01-07,Jean-Luc Mélenchon,5.73,consensus
-2026-01-08,Jean-Luc Mélenchon,5.53,consensus
+2025-12-19,Jean-Luc Mélenchon,7.52,consensus
+2025-12-20,Jean-Luc Mélenchon,7.52,consensus
+2025-12-21,Jean-Luc Mélenchon,7.52,consensus
+2025-12-22,Jean-Luc Mélenchon,7.19,consensus
+2025-12-23,Jean-Luc Mélenchon,7.19,consensus
+2025-12-24,Jean-Luc Mélenchon,7.19,consensus
+2025-12-25,Jean-Luc Mélenchon,6.86,consensus
+2025-12-26,Jean-Luc Mélenchon,6.86,consensus
+2025-12-27,Jean-Luc Mélenchon,7.52,consensus
+2025-12-28,Jean-Luc Mélenchon,8.19,consensus
+2025-12-29,Jean-Luc Mélenchon,7.52,consensus
+2025-12-30,Jean-Luc Mélenchon,8.19,consensus
+2025-12-31,Jean-Luc Mélenchon,7.86,consensus
+2026-01-01,Jean-Luc Mélenchon,9.46,consensus
+2026-01-02,Jean-Luc Mélenchon,9.12,consensus
+2026-01-03,Jean-Luc Mélenchon,9.12,consensus
+2026-01-04,Jean-Luc Mélenchon,9.12,consensus
+2026-01-05,Jean-Luc Mélenchon,10.01,consensus
+2026-01-06,Jean-Luc Mélenchon,8.88,consensus
+2026-01-07,Jean-Luc Mélenchon,8.88,consensus
+2026-01-08,Jean-Luc Mélenchon,8.55,consensus
 2026-01-09,Jean-Luc Mélenchon,7.73,consensus
 2026-01-10,Jean-Luc Mélenchon,10.2,consensus
 2026-01-11,Jean-Luc Mélenchon,7.78,consensus
@@ -2992,7 +2718,11 @@ date,candidate,prob_pct,source
 2026-08-31,Jean-Luc Mélenchon,14.49,consensus
 2026-09-01,Jean-Luc Mélenchon,14.09,consensus
 2026-09-02,Jean-Luc Mélenchon,14.09,consensus
-2026-09-03,Jean-Luc Mélenchon,13.69,consensus
+2026-09-03,Jean-Luc Mélenchon,13.72,consensus
+2026-09-04,Jean-Luc Mélenchon,13.58,consensus
+2026-09-05,Jean-Luc Mélenchon,12.78,consensus
+2026-09-06,Jean-Luc Mélenchon,12.24,consensus
+2026-09-07,Jean-Luc Mélenchon,11.44,consensus
 2025-10-20,Jordan Bardella,27.27,consensus
 2025-10-21,Jordan Bardella,27.27,consensus
 2025-10-22,Jordan Bardella,27.27,consensus
@@ -3312,6 +3042,10 @@ date,candidate,prob_pct,source
 2026-09-01,Jordan Bardella,6.04,consensus
 2026-09-02,Jordan Bardella,5.94,consensus
 2026-09-03,Jordan Bardella,5.56,consensus
+2026-09-04,Jordan Bardella,5.84,consensus
+2026-09-05,Jordan Bardella,5.88,consensus
+2026-09-06,Jordan Bardella,5.81,consensus
+2026-09-07,Jordan Bardella,3.61,consensus
 2025-11-02,Marine Le Pen,11.0,consensus
 2025-11-03,Marine Le Pen,8.27,consensus
 2025-11-04,Marine Le Pen,9.74,consensus
@@ -3617,7 +3351,11 @@ date,candidate,prob_pct,source
 2026-08-31,Marine Le Pen,33.99,consensus
 2026-09-01,Marine Le Pen,33.93,consensus
 2026-09-02,Marine Le Pen,34.03,consensus
-2026-09-03,Marine Le Pen,34.17,consensus
+2026-09-03,Marine Le Pen,34.25,consensus
+2026-09-04,Marine Le Pen,34.28,consensus
+2026-09-05,Marine Le Pen,34.36,consensus
+2026-09-06,Marine Le Pen,36.21,consensus
+2026-09-07,Marine Le Pen,36.51,consensus
 2025-11-02,Raphaël Glucksmann,5.0,consensus
 2025-11-03,Raphaël Glucksmann,9.3,consensus
 2025-11-04,Raphaël Glucksmann,9.3,consensus
@@ -3924,6 +3662,10 @@ date,candidate,prob_pct,source
 2026-09-01,Raphaël Glucksmann,2.26,consensus
 2026-09-02,Raphaël Glucksmann,2.42,consensus
 2026-09-03,Raphaël Glucksmann,2.39,consensus
+2026-09-04,Raphaël Glucksmann,1.98,consensus
+2026-09-05,Raphaël Glucksmann,1.92,consensus
+2026-09-06,Raphaël Glucksmann,2.18,consensus
+2026-09-07,Raphaël Glucksmann,1.92,consensus
 2025-12-09,Sarah Knafo,4.75,consensus
 2025-12-10,Sarah Knafo,4.7,consensus
 2025-12-11,Sarah Knafo,7.25,consensus
@@ -4192,7 +3934,11 @@ date,candidate,prob_pct,source
 2026-08-31,Sarah Knafo,1.89,consensus
 2026-09-01,Sarah Knafo,1.89,consensus
 2026-09-02,Sarah Knafo,1.77,consensus
-2026-09-03,Sarah Knafo,1.77,consensus
+2026-09-03,Sarah Knafo,1.81,consensus
+2026-09-04,Sarah Knafo,1.73,consensus
+2026-09-05,Sarah Knafo,1.73,consensus
+2026-09-06,Sarah Knafo,1.73,consensus
+2026-09-07,Sarah Knafo,1.73,consensus
 2026-01-09,Sébastien Lecornu,5.5,consensus
 2026-01-10,Sébastien Lecornu,5.5,consensus
 2026-01-11,Sébastien Lecornu,4.78,consensus
@@ -4431,6 +4177,10 @@ date,candidate,prob_pct,source
 2026-09-01,Sébastien Lecornu,2.3,consensus
 2026-09-02,Sébastien Lecornu,2.3,consensus
 2026-09-03,Sébastien Lecornu,2.26,consensus
+2026-09-04,Sébastien Lecornu,2.26,consensus
+2026-09-05,Sébastien Lecornu,2.22,consensus
+2026-09-06,Sébastien Lecornu,2.26,consensus
+2026-09-07,Sébastien Lecornu,2.24,consensus
 2025-10-15,Édouard Philippe,20.0,consensus
 2025-10-16,Édouard Philippe,20.0,consensus
 2025-10-17,Édouard Philippe,20.0,consensus
@@ -4755,6 +4505,10 @@ date,candidate,prob_pct,source
 2026-09-01,Édouard Philippe,24.51,consensus
 2026-09-02,Édouard Philippe,25.13,consensus
 2026-09-03,Édouard Philippe,25.13,consensus
+2026-09-04,Édouard Philippe,26.98,consensus
+2026-09-05,Édouard Philippe,26.18,consensus
+2026-09-06,Édouard Philippe,27.01,consensus
+2026-09-07,Édouard Philippe,28.21,consensus
 2025-11-14,Éric Zemmour,21.5,consensus
 2025-11-15,Éric Zemmour,1.2,consensus
 2025-11-16,Éric Zemmour,1.85,consensus
@@ -5049,3 +4803,7 @@ date,candidate,prob_pct,source
 2026-09-01,Éric Zemmour,1.15,consensus
 2026-09-02,Éric Zemmour,1.15,consensus
 2026-09-03,Éric Zemmour,1.13,consensus
+2026-09-04,Éric Zemmour,1.13,consensus
+2026-09-05,Éric Zemmour,1.07,consensus
+2026-09-06,Éric Zemmour,1.01,consensus
+2026-09-07,Éric Zemmour,1.05,consensus
