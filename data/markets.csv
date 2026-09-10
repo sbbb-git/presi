@@ -285,7 +285,10 @@ polymarket,Bernard Cazeneuve,2026-09-03,0.15
 polymarket,Bernard Cazeneuve,2026-09-04,0.15
 polymarket,Bernard Cazeneuve,2026-09-05,0.15
 polymarket,Bernard Cazeneuve,2026-09-06,0.15
-polymarket,Bernard Cazeneuve,2026-09-07,0.05
+polymarket,Bernard Cazeneuve,2026-09-07,0.15
+polymarket,Bernard Cazeneuve,2026-09-08,0.05
+polymarket,Bernard Cazeneuve,2026-09-09,0.05
+polymarket,Bernard Cazeneuve,2026-09-10,0.05
 kalshi,David Lisnard,2026-02-08,1.0
 kalshi,David Lisnard,2026-03-01,2.0
 kalshi,David Lisnard,2026-03-10,4.0
@@ -306,6 +309,9 @@ kalshi,David Lisnard,2026-08-14,0.1
 kalshi,David Lisnard,2026-09-05,3.7
 kalshi,David Lisnard,2026-09-06,3.7
 kalshi,David Lisnard,2026-09-07,3.8
+kalshi,David Lisnard,2026-09-08,7.8
+kalshi,David Lisnard,2026-09-09,7.2
+kalshi,David Lisnard,2026-09-10,3.9
 manifold,David Lisnard,2026-03-25,0.41
 manifold,David Lisnard,2026-05-20,3.0
 manifold,David Lisnard,2026-09-04,2.53
@@ -589,7 +595,10 @@ polymarket,David Lisnard,2026-09-03,2.6
 polymarket,David Lisnard,2026-09-04,2.45
 polymarket,David Lisnard,2026-09-05,3.35
 polymarket,David Lisnard,2026-09-06,3.2
-polymarket,David Lisnard,2026-09-07,3.25
+polymarket,David Lisnard,2026-09-07,2.9
+polymarket,David Lisnard,2026-09-08,4.0
+polymarket,David Lisnard,2026-09-09,3.75
+polymarket,David Lisnard,2026-09-10,4.85
 kalshi,Dominique de Villepin,2026-01-19,10.0
 kalshi,Dominique de Villepin,2026-02-17,11.0
 kalshi,Dominique de Villepin,2026-02-27,8.0
@@ -618,6 +627,7 @@ kalshi,Dominique de Villepin,2026-09-02,1.1
 kalshi,Dominique de Villepin,2026-09-03,0.3
 kalshi,Dominique de Villepin,2026-09-04,3.9
 kalshi,Dominique de Villepin,2026-09-07,0.2
+kalshi,Dominique de Villepin,2026-09-08,2.2
 manifold,Dominique de Villepin,2026-01-11,5.85
 manifold,Dominique de Villepin,2026-01-31,2.49
 manifold,Dominique de Villepin,2026-03-18,1.65
@@ -903,6 +913,9 @@ polymarket,Dominique de Villepin,2026-09-04,1.45
 polymarket,Dominique de Villepin,2026-09-05,1.45
 polymarket,Dominique de Villepin,2026-09-06,1.45
 polymarket,Dominique de Villepin,2026-09-07,1.45
+polymarket,Dominique de Villepin,2026-09-08,1.45
+polymarket,Dominique de Villepin,2026-09-09,1.7
+polymarket,Dominique de Villepin,2026-09-10,1.3
 manifold,Dominique de Villepin ,2025-12-11,1.06
 manifold,Dominique de Villepin ,2026-01-10,2.0
 manifold,Dominique de Villepin ,2026-01-11,4.62
@@ -1189,6 +1202,9 @@ polymarket,François Bayrou,2026-09-04,0.15
 polymarket,François Bayrou,2026-09-05,0.15
 polymarket,François Bayrou,2026-09-06,0.05
 polymarket,François Bayrou,2026-09-07,0.05
+polymarket,François Bayrou,2026-09-08,0.05
+polymarket,François Bayrou,2026-09-09,0.05
+polymarket,François Bayrou,2026-09-10,0.05
 manifold,François Bayrou ,2026-03-12,1.0
 manifold,François Bayrou ,2026-03-23,0.08
 manifold,François Bayrou ,2026-05-23,0.43
@@ -1212,6 +1228,8 @@ kalshi,François Hollande,2026-08-30,6.0
 kalshi,François Hollande,2026-08-31,8.0
 kalshi,François Hollande,2026-09-03,5.0
 kalshi,François Hollande,2026-09-06,7.0
+kalshi,François Hollande,2026-09-09,7.0
+kalshi,François Hollande,2026-09-10,4.0
 manifold,François Hollande,2026-03-12,1.29
 manifold,François Hollande,2026-03-24,0.35
 manifold,François Hollande,2026-04-25,0.62
@@ -1221,6 +1239,7 @@ manifold,François Hollande,2026-05-20,3.0
 manifold,François Hollande,2026-06-04,2.81
 manifold,François Hollande,2026-07-28,1.85
 manifold,François Hollande,2026-09-04,2.38
+manifold,François Hollande,2026-09-08,0.47
 polymarket,François Hollande,2025-11-14,13.0
 polymarket,François Hollande,2025-11-15,0.7
 polymarket,François Hollande,2025-11-16,0.7
@@ -1502,6 +1521,9 @@ polymarket,François Hollande,2026-09-04,3.45
 polymarket,François Hollande,2026-09-05,3.65
 polymarket,François Hollande,2026-09-06,3.65
 polymarket,François Hollande,2026-09-07,2.95
+polymarket,François Hollande,2026-09-08,3.1
+polymarket,François Hollande,2026-09-09,3.0
+polymarket,François Hollande,2026-09-10,2.95
 kalshi,François Ruffin,2026-02-01,1.0
 kalshi,François Ruffin,2026-03-04,2.0
 kalshi,François Ruffin,2026-03-07,2.0
@@ -1787,6 +1809,9 @@ polymarket,François Ruffin,2026-09-04,0.15
 polymarket,François Ruffin,2026-09-05,0.15
 polymarket,François Ruffin,2026-09-06,0.05
 polymarket,François Ruffin,2026-09-07,0.05
+polymarket,François Ruffin,2026-09-08,0.05
+polymarket,François Ruffin,2026-09-09,0.05
+polymarket,François Ruffin,2026-09-10,0.05
 kalshi,Gabriel Attal,2026-01-13,15.0
 kalshi,Gabriel Attal,2026-01-16,8.0
 kalshi,Gabriel Attal,2026-02-10,6.0
@@ -1833,6 +1858,7 @@ kalshi,Gabriel Attal,2026-09-04,1.0
 kalshi,Gabriel Attal,2026-09-05,4.0
 kalshi,Gabriel Attal,2026-09-06,2.4
 kalshi,Gabriel Attal,2026-09-07,3.1
+kalshi,Gabriel Attal,2026-09-09,1.3
 manifold,Gabriel Attal,2025-11-03,11.0
 manifold,Gabriel Attal,2025-11-19,12.07
 manifold,Gabriel Attal,2025-12-22,14.79
@@ -1863,6 +1889,8 @@ manifold,Gabriel Attal,2026-07-14,3.91
 manifold,Gabriel Attal,2026-07-15,4.24
 manifold,Gabriel Attal,2026-07-23,4.48
 manifold,Gabriel Attal,2026-09-06,3.93
+manifold,Gabriel Attal,2026-09-08,4.31
+manifold,Gabriel Attal,2026-09-09,4.39
 polymarket,Gabriel Attal,2025-11-14,15.5
 polymarket,Gabriel Attal,2025-11-15,6.0
 polymarket,Gabriel Attal,2025-11-16,6.5
@@ -2146,7 +2174,10 @@ polymarket,Gabriel Attal,2026-09-03,3.05
 polymarket,Gabriel Attal,2026-09-04,3.15
 polymarket,Gabriel Attal,2026-09-05,3.0
 polymarket,Gabriel Attal,2026-09-06,3.15
-polymarket,Gabriel Attal,2026-09-07,3.05
+polymarket,Gabriel Attal,2026-09-07,3.1
+polymarket,Gabriel Attal,2026-09-08,3.05
+polymarket,Gabriel Attal,2026-09-09,2.75
+polymarket,Gabriel Attal,2026-09-10,1.85
 manifold,Gabriel Attal ,2025-11-02,10.0
 manifold,Gabriel Attal ,2025-11-04,11.83
 manifold,Gabriel Attal ,2025-11-06,22.22
@@ -2484,6 +2515,9 @@ polymarket,Gérald Darmanin,2026-09-04,0.15
 polymarket,Gérald Darmanin,2026-09-05,0.15
 polymarket,Gérald Darmanin,2026-09-06,0.15
 polymarket,Gérald Darmanin,2026-09-07,0.15
+polymarket,Gérald Darmanin,2026-09-08,0.15
+polymarket,Gérald Darmanin,2026-09-09,0.1
+polymarket,Gérald Darmanin,2026-09-10,0.1
 kalshi,Jean-Luc Mélenchon,2026-01-09,7.0
 kalshi,Jean-Luc Mélenchon,2026-01-11,7.0
 kalshi,Jean-Luc Mélenchon,2026-01-13,7.0
@@ -2563,6 +2597,8 @@ kalshi,Jean-Luc Mélenchon,2026-09-02,15.0
 kalshi,Jean-Luc Mélenchon,2026-09-03,15.0
 kalshi,Jean-Luc Mélenchon,2026-09-05,14.0
 kalshi,Jean-Luc Mélenchon,2026-09-07,12.0
+kalshi,Jean-Luc Mélenchon,2026-09-08,11.0
+kalshi,Jean-Luc Mélenchon,2026-09-09,11.0
 manifold,Jean-Luc Mélenchon,2025-11-02,3.0
 manifold,Jean-Luc Mélenchon,2025-11-19,2.57
 manifold,Jean-Luc Mélenchon,2026-01-01,6.37
@@ -2618,6 +2654,8 @@ manifold,Jean-Luc Mélenchon,2026-08-31,11.45
 manifold,Jean-Luc Mélenchon,2026-09-03,11.59
 manifold,Jean-Luc Mélenchon,2026-09-04,10.92
 manifold,Jean-Luc Mélenchon,2026-09-06,8.18
+manifold,Jean-Luc Mélenchon,2026-09-08,8.77
+manifold,Jean-Luc Mélenchon,2026-09-09,8.63
 polymarket,Jean-Luc Mélenchon,2025-11-14,17.5
 polymarket,Jean-Luc Mélenchon,2025-11-15,7.0
 polymarket,Jean-Luc Mélenchon,2025-11-16,7.0
@@ -2896,6 +2934,9 @@ polymarket,Jean-Luc Mélenchon,2026-09-04,13.5
 polymarket,Jean-Luc Mélenchon,2026-09-05,12.5
 polymarket,Jean-Luc Mélenchon,2026-09-06,12.5
 polymarket,Jean-Luc Mélenchon,2026-09-07,12.5
+polymarket,Jean-Luc Mélenchon,2026-09-08,12.5
+polymarket,Jean-Luc Mélenchon,2026-09-09,11.5
+polymarket,Jean-Luc Mélenchon,2026-09-10,12.5
 kalshi,Jordan Bardella,2025-12-27,42.0
 kalshi,Jordan Bardella,2025-12-28,43.0
 kalshi,Jordan Bardella,2025-12-29,35.0
@@ -3044,6 +3085,7 @@ kalshi,Jordan Bardella,2026-08-23,4.0
 kalshi,Jordan Bardella,2026-08-25,2.5
 kalshi,Jordan Bardella,2026-08-30,9.4
 kalshi,Jordan Bardella,2026-09-07,4.0
+kalshi,Jordan Bardella,2026-09-09,4.0
 manifold,Jordan Bardella,2025-10-20,27.27
 manifold,Jordan Bardella,2025-11-03,28.59
 manifold,Jordan Bardella,2025-11-04,20.0
@@ -3414,6 +3456,9 @@ polymarket,Jordan Bardella,2026-09-04,2.05
 polymarket,Jordan Bardella,2026-09-05,2.15
 polymarket,Jordan Bardella,2026-09-06,2.25
 polymarket,Jordan Bardella,2026-09-07,2.15
+polymarket,Jordan Bardella,2026-09-08,2.15
+polymarket,Jordan Bardella,2026-09-09,2.15
+polymarket,Jordan Bardella,2026-09-10,2.15
 kalshi,Marine Le Pen,2026-01-09,3.0
 kalshi,Marine Le Pen,2026-01-13,9.0
 kalshi,Marine Le Pen,2026-01-14,13.0
@@ -3542,6 +3587,9 @@ kalshi,Marine Le Pen,2026-09-03,35.0
 kalshi,Marine Le Pen,2026-09-04,35.0
 kalshi,Marine Le Pen,2026-09-06,38.0
 kalshi,Marine Le Pen,2026-09-07,38.0
+kalshi,Marine Le Pen,2026-09-08,40.0
+kalshi,Marine Le Pen,2026-09-09,37.0
+kalshi,Marine Le Pen,2026-09-10,38.0
 manifold,Marine Le Pen,2025-11-02,11.0
 manifold,Marine Le Pen,2025-11-03,8.27
 manifold,Marine Le Pen,2025-11-04,9.74
@@ -3603,6 +3651,9 @@ manifold,Marine Le Pen,2026-09-02,29.83
 manifold,Marine Le Pen,2026-09-03,30.17
 manifold,Marine Le Pen,2026-09-04,31.3
 manifold,Marine Le Pen,2026-09-06,33.34
+manifold,Marine Le Pen,2026-09-07,35.0
+manifold,Marine Le Pen,2026-09-08,35.0
+manifold,Marine Le Pen,2026-09-09,34.6
 polymarket,Marine Le Pen,2025-11-14,15.5
 polymarket,Marine Le Pen,2025-11-15,12.5
 polymarket,Marine Le Pen,2025-11-16,11.0
@@ -3878,7 +3929,10 @@ polymarket,Marine Le Pen,2026-09-03,35.55
 polymarket,Marine Le Pen,2026-09-04,35.05
 polymarket,Marine Le Pen,2026-09-05,35.25
 polymarket,Marine Le Pen,2026-09-06,35.85
-polymarket,Marine Le Pen,2026-09-07,36.6
+polymarket,Marine Le Pen,2026-09-07,36.0
+polymarket,Marine Le Pen,2026-09-08,34.75
+polymarket,Marine Le Pen,2026-09-09,35.65
+polymarket,Marine Le Pen,2026-09-10,37.45
 manifold,Raphaël Glucksmann,2025-11-02,5.0
 manifold,Raphaël Glucksmann,2025-11-03,9.3
 manifold,Raphaël Glucksmann,2025-11-18,7.26
@@ -4168,7 +4222,10 @@ polymarket,Raphaël Glucksmann,2026-09-03,2.05
 polymarket,Raphaël Glucksmann,2026-09-04,2.15
 polymarket,Raphaël Glucksmann,2026-09-05,2.05
 polymarket,Raphaël Glucksmann,2026-09-06,2.45
-polymarket,Raphaël Glucksmann,2026-09-07,2.05
+polymarket,Raphaël Glucksmann,2026-09-07,2.15
+polymarket,Raphaël Glucksmann,2026-09-08,2.05
+polymarket,Raphaël Glucksmann,2026-09-09,1.95
+polymarket,Raphaël Glucksmann,2026-09-10,1.85
 kalshi,Sarah Knafo,2026-01-17,2.0
 kalshi,Sarah Knafo,2026-01-22,7.0
 kalshi,Sarah Knafo,2026-01-26,2.0
@@ -4462,6 +4519,9 @@ polymarket,Sarah Knafo,2026-09-04,0.95
 polymarket,Sarah Knafo,2026-09-05,0.95
 polymarket,Sarah Knafo,2026-09-06,0.95
 polymarket,Sarah Knafo,2026-09-07,0.95
+polymarket,Sarah Knafo,2026-09-08,1.0
+polymarket,Sarah Knafo,2026-09-09,0.85
+polymarket,Sarah Knafo,2026-09-10,0.85
 kalshi,Sébastien Lecornu,2026-02-10,5.0
 kalshi,Sébastien Lecornu,2026-03-06,3.0
 kalshi,Sébastien Lecornu,2026-03-07,4.0
@@ -4699,7 +4759,10 @@ polymarket,Sébastien Lecornu,2026-09-03,0.75
 polymarket,Sébastien Lecornu,2026-09-04,0.75
 polymarket,Sébastien Lecornu,2026-09-05,0.65
 polymarket,Sébastien Lecornu,2026-09-06,0.75
-polymarket,Sébastien Lecornu,2026-09-07,0.7
+polymarket,Sébastien Lecornu,2026-09-07,0.8
+polymarket,Sébastien Lecornu,2026-09-08,0.7
+polymarket,Sébastien Lecornu,2026-09-09,0.85
+polymarket,Sébastien Lecornu,2026-09-10,0.85
 kalshi,Édouard Philippe,2025-12-29,17.0
 kalshi,Édouard Philippe,2026-01-09,25.0
 kalshi,Édouard Philippe,2026-01-12,25.0
@@ -4783,6 +4846,8 @@ kalshi,Édouard Philippe,2026-09-02,24.0
 kalshi,Édouard Philippe,2026-09-04,26.0
 kalshi,Édouard Philippe,2026-09-05,26.0
 kalshi,Édouard Philippe,2026-09-07,26.0
+kalshi,Édouard Philippe,2026-09-09,28.0
+kalshi,Édouard Philippe,2026-09-10,26.0
 manifold,Édouard Philippe,2025-10-15,20.0
 manifold,Édouard Philippe,2025-10-28,16.78
 manifold,Édouard Philippe,2025-11-03,29.0
@@ -4868,6 +4933,8 @@ manifold,Édouard Philippe,2026-08-28,23.55
 manifold,Édouard Philippe,2026-09-02,22.64
 manifold,Édouard Philippe,2026-09-04,23.91
 manifold,Édouard Philippe,2026-09-06,30.05
+manifold,Édouard Philippe,2026-09-08,28.92
+manifold,Édouard Philippe,2026-09-09,28.18
 polymarket,Édouard Philippe,2025-11-14,20.5
 polymarket,Édouard Philippe,2025-11-15,23.0
 polymarket,Édouard Philippe,2025-11-16,23.5
@@ -5153,6 +5220,9 @@ polymarket,Édouard Philippe,2026-09-04,29.5
 polymarket,Édouard Philippe,2026-09-05,27.5
 polymarket,Édouard Philippe,2026-09-06,26.5
 polymarket,Édouard Philippe,2026-09-07,29.5
+polymarket,Édouard Philippe,2026-09-08,28.5
+polymarket,Édouard Philippe,2026-09-09,30.5
+polymarket,Édouard Philippe,2026-09-10,30.0
 kalshi,Éric Zemmour,2026-01-13,3.0
 kalshi,Éric Zemmour,2026-03-16,1.0
 kalshi,Éric Zemmour,2026-06-19,1.9
@@ -5434,4 +5504,7 @@ polymarket,Éric Zemmour,2026-09-03,0.75
 polymarket,Éric Zemmour,2026-09-04,0.75
 polymarket,Éric Zemmour,2026-09-05,0.6
 polymarket,Éric Zemmour,2026-09-06,0.45
-polymarket,Éric Zemmour,2026-09-07,0.55
+polymarket,Éric Zemmour,2026-09-07,0.25
+polymarket,Éric Zemmour,2026-09-08,0.7
+polymarket,Éric Zemmour,2026-09-09,0.55
+polymarket,Éric Zemmour,2026-09-10,0.55
