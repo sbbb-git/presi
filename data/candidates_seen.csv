@@ -1,21 +1,21 @@
 candidate,status,n_polls,last_seen
-Marine Le Pen,declared,116,2026-09-03
-Édouard Philippe,declared,109,2026-09-03
-Jean-Luc Mélenchon,declared,90,2026-09-03
-Bruno Retailleau,declared,61,2026-09-03
-Nicolas Dupont-Aignan,declared,61,2026-09-02
-Gabriel Attal,declared,59,2026-09-03
-Nathalie Arthaud,declared,55,2026-09-03
+Marine Le Pen,declared,130,2026-09-10
+Édouard Philippe,declared,120,2026-09-10
+Jean-Luc Mélenchon,declared,98,2026-09-10
+Bruno Retailleau,declared,73,2026-09-10
+Gabriel Attal,declared,70,2026-09-10
+Nicolas Dupont-Aignan,declared,69,2026-09-10
+Nathalie Arthaud,declared,59,2026-09-10
+David Lisnard,declared,2,2026-09-10
 Xavier Bertrand,declared,2,2024-09-12
-David Lisnard,declared,1,2026-09-01
-Fabien Roussel,likely,73,2026-09-03
-Éric Zemmour,likely,63,2026-09-03
-Marine Tondelier,likely,62,2026-09-03
-Raphaël Glucksmann,likely,52,2026-09-03
+Fabien Roussel,likely,83,2026-09-10
+Marine Tondelier,likely,71,2026-09-10
+Éric Zemmour,likely,68,2026-09-10
+Raphaël Glucksmann,likely,62,2026-09-10
 Dominique de Villepin,likely,15,2026-09-01
 François Ruffin,likely,9,2026-09-01
-Olivier Faure,undecided,29,2026-09-02
-Francois Hollande,undecided,13,2026-08-28
+Olivier Faure,undecided,32,2026-09-09
+Francois Hollande,undecided,15,2026-09-10
 Bernard Cazeneuve,undecided,8,2023-09-04
 Sarah Knafo,undecided,8,2026-05-28
 Bruno Le Maire,undecided,5,2024-04-18
@@ -27,5 +27,6 @@ François Bayrou (MD),unknown,2,2023-09-04
 Sandrine Rousseau (LE),unknown,2,2024-09-12
 Carole Delga (PS),unknown,1,2023-04-07
 Jean Castex (IND),unknown,1,2023-09-04
+Karim Bouamrane,unknown,1,2026-09-10
 Michel Barnier (LR),unknown,1,2024-09-12
 Yaël Braun-Pivet (RE),unknown,1,2023-09-04
